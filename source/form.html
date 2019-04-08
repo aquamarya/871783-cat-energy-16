@@ -29,90 +29,84 @@
     </div>
   </nav>
 </header>
-<!--
+
 <main class="main">
   <div class="container">
-    <h2>Подбор программы</h2>
-    <p>Заполните анкету и мы подберем  программу питания для вашего кота</p>
-    <form class="" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
-        <legend class="visually-hidden"></legend>
-        <p>
-          <label class="visually-hidden" for="cat-name">Имя:*</label>
-          <input class="cat-name__icon" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
-        </p>
-        <p>
-          <label class="visually-hidden" for="cat-weight">Вес (кг):*</label>
-          <input class="cat-weight__icon" id="cat-weight" type="number" name="cat-weight" placeholder="7">
-        </p>
-        <p>
-          <label class="visually-hidden" for="cat-age">Возраст (лет):</label>
-          <input class="cat-age__icon" id="cat-age" type="number" name="cat-age" placeholder="7">
-        </p>
+    <h2 class="program__title">Подбор программы</h2>
+    <p class="program__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+    <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="cat-info">
+        <legend class="visually-hidden">Информация о коте</legend>
+        <ul class="cat-info__list">
+          <li class="cat-info__item">
+            <input id="cat-name" class="cat-name__icon" type="text" name="cat-name" placeholder="Барсик">
+            <label for="cat-name" class="visually-hidden">Имя:*</label>
+          </li>
+          <li class="cat-info__item">
+            <input id="cat-weight" class="cat-weight__icon" type="number" name="cat-weight" placeholder="7">
+            <label for="cat-weight" class="visually-hidden">Вес (кг):*</label>
+          </li>
+          <li class="cat-info__item">
+            <input id="cat-age" class="cat-age__icon" type="number" name="cat-age" placeholder="7">
+            <label for="cat-age" class="visually-hidden">Возраст (лет):</label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="program__filter">
         <legend class="visually-hidden">Фильтр подбора программы</legend>
         <ul class="filter-options">
           <li class="filter-option filter-option__losing-weight">
-            <input class="visually-hidden filter-input filter-input__radio" type="radio" name="program-choice" value="losing-weight" id="losing-weight" checked>
+            <input id="losing-weight" class="visually-hidden filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="losing-weight" checked>
             <label for="losing-weight">Похудение</label>
           </li>
           <li class="filter-option filter-option__gain-weight">
-            <input class="visually-hidden filter-input filter-input__radio" type="radio" name="program-choice" value="gain-weight" id="gain-weight">
+            <input  id="gain-weight" class="visually-hidden filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="gain-weight">
             <label for="gain-weight">Набор массы</label>
           </li>
           <li class="filter-option filter-option__need-advice">
-            <input class="visually-hidden filter-input filter-input__radio" type="radio" name="program-choice" value="need-advice" id="need-advice">
+            <input id="need-advice" class="visually-hidden filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="need-advice">
             <label for="need-advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend class="contacts-items">Контактные данные (владельца кота)</legend>
-        <p class="contacts-item">
-          <label for="contacts-email">E-mail:*</label>
-          <input id="contacts-email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+      <fieldset class="user-info">
+        <legend class="user-info__items">Контактные данные (владельца кота)</legend>
+        <p class="user-info__item">
+          <input  id="user__email" class="user__input" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+          <label for="user__email">E-mail:*</label>
         </p>
-        <p class="contacts-item">
-          <label for="contacts-name">Телефон:*</label>
-          <input id="contacts-name" type="number" name="user-name" value="" placeholder="8 (960) 900-60-90">
+        <p class="user__item">
+          <input id="user__name" class="user__input" type="number" name="user__name" value="" placeholder="8 (960) 900-60-90">
+          <label for="user__name">Телефон:*</label>
         </p>
       </fieldset>
-      <fieldset>
-        <legend class="filter__comment">Комментарий</legend>
-          <label for="contacts-text" class="visually-hidden">Комментарий</label>
-          <textarea id="contacts-text" name="contacts-text" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="comment">
+        <legend class="comment__title">Комментарий</legend>
+          <textarea id="comment__text" name="comment__text" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <label for="comment__text" class="visually-hidden">Комментарий</label>
       </fieldset>
-      <fieldset>
-        <legend class="filter__additional-products">Дополнительно</legend>
-        <ul class="filter-options">
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="additional-product" id="sweetener" checked>
-            <label for="sweetener">
-              Сахарозаменитель
-            </label>
+      <fieldset class="extra">
+        <legend class="filter__extra">Дополнительно</legend>
+        <ul class="filter__list">
+          <li class="filter__item">
+            <input id="sweetener" class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="extra-product" checked>
+            <label for="sweetener">Сахарозаменитель</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="additional-product" id="water">
-            <label for="water">
-              Питьевая вода
-            </label>
+          <li class="filter__item">
+            <input id="water" class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="extra-product">
+            <label for="water">Питьевая вода</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="additional-product" id="milk">
-            <label for="milk">
-              Молоко
-            </label>
+          <li class="filter__item">
+            <input id="milk" class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="extra-product">
+            <label for="milk">Молоко</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input__checkbox" type="checkbox" name="additional-product" id="vitamins">
-            <label for="vitamins">
-              Витамины
-            </label>
+          <li class="filter__item">
+            <input id="vitamins" class="visually-hidden filter__input filter__input--checkbox" type="checkbox" name="extra-product">
+            <label for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="filter-button button">
+      <button type="submit" class="button filter-button">
         Отправить заявку
       </button>
       <span>*—Обязательные поля</span>
@@ -124,7 +118,7 @@
     <img class="contacts__map" src="http://placehold.it/320x365" alt="Карта">
   </section>
 </main>
--->
+
 <footer class="footer">
   <a class="footer__logo" href="index.html">
     <img class="footer__logo-image" src="img/logotype-mobile.svg" width="170" height="60" alt="Логотип Кэт энерджи">
