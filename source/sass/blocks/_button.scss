@@ -12,4 +12,13 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $c-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus,
+  &:active {
+    color: #8fc46e;
+  }
 }
