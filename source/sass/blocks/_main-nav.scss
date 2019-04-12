@@ -1,13 +1,33 @@
 .main-nav {
+  position: relative;
+
   width: 320px;
+  min-height: 65px;
   margin: 0 auto;
 
-  &__list {
-    margin: 0;
-    padding: 0;
+  background-color: $c-white;
+}
 
-    list-style: none;
-  }
+.button.main-nav__toggle {
+  position: absolute;
+  top: -65;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 65px;
+  height: 63px;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav__list {
+  margin: 0 auto;
+  padding: 0 0;
+
+  list-style: none;
 }
 
 @media (min-width: $tablet-width) {
