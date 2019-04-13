@@ -1,7 +1,32 @@
+.contacts__info {
+  display: flex;
+  width: 280px;
+  margin: 20px;
+}
+
+.contacts__title {
+  justify-content: flex-start;
+  width: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .contacts__text {
+  justify-content: flex-start;
+  width: 50%;
+  padding-top: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   color: $c-darkgray;
   font-style: normal;
+}
+
+.contacts__map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-position: 0 0;
+  background-color: $c-lightgray;
 }

@@ -1,0 +1,19 @@
+.example__slider {
+  margin: 0;
+  width: 320px;
+}
+
+.slider__list {
+  list-style: none;
+  padding-left: -40px;
+}
+
+.slider__toggles {
+  display: flex;
+}
+
+.slider__toggle {
+  width: 45px;
+  color: $c-black;
+  background: transparent;
+}

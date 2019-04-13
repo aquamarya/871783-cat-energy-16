@@ -1,4 +1,18 @@
+.info {
+  margin: 20px;
+}
+
+.info__title {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.info__list {
+  list-style: none;
+}
+
 .info__description {
+  width: 200px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
