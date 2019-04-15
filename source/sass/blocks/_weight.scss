@@ -1,0 +1,32 @@
+.weight {
+  margin: 20px;
+
+  &__item--lose,
+  &__item--gain {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: $c-lightgray;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $c-darkgray;
+    font-style: normal;
+  }
+}
+
+.catalog-slim__to-all {
+  color: $c-black;
+}
+
+.catalog-pro__to-all {
+  color: $c-black;
+}

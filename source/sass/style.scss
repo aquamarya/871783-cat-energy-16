@@ -1,3 +1,16 @@
-body {
-  background: red;
-}
+@import "normalize.scss";
+@import "vars.scss";
+@import "mixins.scss";
+@import "blocks/base";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/button";
+@import "blocks/start--program";
+@import "blocks/weight";
+@import "blocks/site-list";
+@import "blocks/info";
+@import "blocks/example";
+@import "blocks/example__slider";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/social";

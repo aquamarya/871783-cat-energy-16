@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 11px 0;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: $c-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $c-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus,
+  &:active {
+    color: #8fc46e;
+  }
+}
