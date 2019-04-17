@@ -160,22 +160,22 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
+    width: 440px;
     margin: 0 auto;
   }
 
   .site-list {
-    width: 570px;
+    width: 440px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 960px;
+    width: 560px;
   }
 
   .site-list {
-    width: 780px;
+    width: 480px;
   }
 }
 

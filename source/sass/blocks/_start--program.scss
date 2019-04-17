@@ -38,23 +38,24 @@
     text-transform: uppercase;
   }
 
-  &__product img {
+  &__product {
     width: 280px;
     height: 271px;
 
-    background-position: 30px 60px;
+    transform: translateX(7%);
   }
 }
 
 @media (min-width: $tablet-width) {
   .start-program {
-    display: none;
+    display: block;
+  }
 
-    &__product {
-      width: 709px;
-      height: 609px;
-      background-image: url("../../img/index-can-tablet@1x.jpg");
-    }
+  .start-program__product {
+    width: 620px;
+    height: 620px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 }
 
