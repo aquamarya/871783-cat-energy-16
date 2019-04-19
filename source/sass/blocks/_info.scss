@@ -9,6 +9,7 @@
 }
 
 .info__list {
+  padding: 0;
   list-style: none;
 }
 
@@ -19,4 +20,41 @@
   line-height: 18px;
   color: $c-darkgray;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    margin: 30px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+    }
+
+    &__description {
+      width: 250px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    margin: 40px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

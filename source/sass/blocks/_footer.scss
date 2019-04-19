@@ -1,6 +1,12 @@
-.footer__logo img {
+.footer__wrapper {
+  margin-top: -3px;
+  background-color: $c-lightgray;
+}
+
+.footer__logo-image {
   margin-top: 35px;
   margin-bottom: 30px;
+  margin-left: 96px;
   width: 127px;
   height: 23px;
   text-align: center;
@@ -16,5 +22,43 @@
 }
 
 .copyright {
-  margin: 20px;
+  margin: 0 20px;
+  padding: 30px 0 35px 0;
+}
+
+.copyright__link {
+  position: relative;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $c-darkgray;
+}
+
+.copyright__link--image {
+  position: absolute;
+  top: -8px;
+  right: -160px;
+  display: inline-block;
+  width: 28px;
+  height: 36px;
+  background-image: url("../../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  fill: $c-darkgray;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    padding: 30px;
+  }
+
+  .footer__logo-image {
+    margin-left: 0;
+  }
+
+  .copyright__link--image {
+    right: -50px;
+  }
 }
