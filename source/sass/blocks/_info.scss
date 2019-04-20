@@ -54,7 +54,16 @@
 
     &__list {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 245px;
+      margin-right: 80px;
+    }
+
+    &__item:nth-child(4n) {
+      margin-right: 0;
     }
   }
 }

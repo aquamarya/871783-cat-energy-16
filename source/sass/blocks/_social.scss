@@ -29,12 +29,12 @@
 }
 
 .social__list {
+  display: flex;
+  justify-content: space-between;
   width: 130px;
   margin: 0 auto;
   padding: 20px;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .social__item {
