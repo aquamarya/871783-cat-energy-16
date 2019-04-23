@@ -1,5 +1,6 @@
 .info {
   margin: 20px;
+  margin-bottom: 40px;
 }
 
 .info__title {
@@ -8,14 +9,61 @@
 }
 
 .info__list {
+  padding: 0;
   list-style: none;
 }
 
 .info__description {
   width: 200px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $c-darkgray;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    margin: 30px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+    }
+
+    &__description {
+      width: 250px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    margin: 40px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__item {
+      width: 245px;
+      margin-right: 80px;
+    }
+
+    &__item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }

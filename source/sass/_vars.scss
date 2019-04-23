@@ -1,8 +1,9 @@
-$f-base: "Oswald", "Arial", sans-serif;
+$f-base: "Oswald", "Arial", "Helvetica", sans-serif;
 
 //global vars
 $tablet-width: 768px;
 $desktop-width: 1300px;
+$mobile-width-only: 767px;
 
 // colors
 $c-white: #ffffff;
@@ -10,4 +11,7 @@ $c-green: #68b738;
 $c-lightgray: #f2f2f2;
 $c-darkgray: #444444;
 $c-black: #000000;
-
+$c-gray: #ebebeb;
+$c-catalog-gray: #ededed;
+$c-mouse-gray: #d9d9d9;
+$c-coal: #686868;
