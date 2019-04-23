@@ -205,8 +205,35 @@
     }
   }
 
+  .weight__item--lose .weight__title::after {
+    top: 0;
+    left: 20px;
+    width: 70px;
+    height: 100px;
+  }
+
+  .weight__item--gain .weight__title::after {
+    top: 20px;
+    left: -20px;
+    width: 140px;
+    height: 60px;
+  }
+
+  .weight__item--lose .weight__description {
+    width: 465px;
+  }
+
+  .weight__item--gain .weight__description {
+    width: 450px;
+  }
+
   .catalog-slim__to-all,
   .catalog-pro__to-all {
     padding-top: 10px;
+
+    &::after {
+      top: 16px;
+      left: 130px;
+    }
   }
 }
