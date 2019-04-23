@@ -14,55 +14,56 @@
 
     background: $c-lightgray;
   }
+}
 
-  &__title {
-    position: relative;
-    margin: 0;
-    padding: 11px;
-    padding-left: 70px;
-    font-weight: normal;
-    text-transform: uppercase;
+.weight__title {
+  position: relative;
+  margin: 0;
+  padding: 11px;
+  padding-left: 70px;
+  font-weight: normal;
+  text-transform: uppercase;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50px;
-      height: 50px;
-
-      background-color: $c-green;
-      border-radius: 50%;
-    }
-  }
-
-  .weight__item--lose .weight__title::after {
+  &::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: 8px;
-    width: 36px;
+    top: 0;
+    left: 0;
+    width: 50px;
     height: 50px;
-    z-index: 5;
 
-    background-image: url("../../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-color: $c-green;
+    border-radius: 50%;
   }
+}
 
-  .weight__item--gain .weight__title::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -9px;
-    width: 68px;
-    height: 29px;
-    z-index: 5;
+.weight__item--lose .weight__title::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 8px;
+  width: 36px;
+  height: 50px;
+  z-index: 5;
 
-    background-image: url("../../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+  background-image: url("../../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.weight__item--gain .weight__title::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -9px;
+  width: 68px;
+  height: 29px;
+  z-index: 5;
+
+  background-image: url("../../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 
   &__description {
     padding-bottom: 6px;
@@ -123,6 +124,7 @@
     }
 
     &__description {
+      font-family: "Arial", "Helvetica", sans-serif;
       font-size: 16px;
       line-height: 24px;
     }
@@ -130,14 +132,14 @@
 
   .weight__item--lose .weight__title::after {
     top: -3px;
-    left: 8px;
+    left: 450px;
     width: 144px;
     height: 196px;
   }
 
   .weight__item--gain .weight__title::after {
-    top: -3px;
-    left: 8px;
+    top: 45px;
+    left: 366px;
     width: 268px;
     height: 114px;
   }

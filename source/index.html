@@ -34,7 +34,7 @@
     </header>
 
     <main class="main">
-
+      <div class="main__container">
         <div class="start-program">
           <h2 class="start-program__title">Функциональное питание для котов</h2>
           <span class="start-program__text">Занялся собой? Займись котом!</span>
@@ -78,91 +78,94 @@
           </ul>
         </section>
 
-      <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца,
-          просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <table class="example__calculation">
-          <tr>
-            <td class="example__weight">
-              5 кг
-            </td>
-            <td class="example__field">
-              снижение<br>веса
-            </td>
-          </tr>
-          <tr>
-            <td class="example__days">
-              60 дней
-            </td>
-            <td class="example__field">
-              затрачено<br>времени
-            </td>
-          </tr>
-          <tr>
-            <td class="example__field">
-              Затраты на питание:
-            </td>
-            <td class="example__total">
-              15 000 руб.
-            </td>
-          </tr>
-        </table>
-        <div class="example__slider">
-          <ul class="example__list slider__list">
-            <li class="example__item example__item--before slider__item">
-              <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с излишним весом">
-            </li>
-            <li class="example__item example__item--after slider__item">
-              <img src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот">
-            </li>
-          </ul>
-          <p class="example__toggles slider__toggles">
-            <button class="button slider__toggle" type="button">Было</button>
-            <button class="button slider__toggle" type="button">Стало</button>
+        <section class="example">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца,
+            просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-        </div>
-      </section>
+          <table class="example__calculation">
+            <tr>
+              <td class="example__value">
+                5 кг
+              </td>
+              <td class="example__field">
+                снижение<br> веса
+              </td>
+            </tr>
+            <tr>
+              <td class="example__value">
+                60 дней
+              </td>
+              <td class="example__field">
+                затрачено<br> времени
+              </td>
+            </tr>
+            <tr class="example__total">
+              <td class="example__value example__value--total">
+                Затраты на питание:
+              </td>
+              <td class="example__field example__field--total">
+                15 000 руб.
+              </td>
+            </tr>
+          </table>
+          <div class="example__slider">
+            <ul class="example__list slider__list">
+              <li class="example__item example__item--before slider__item">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с излишним весом">
+              </li>
+              <li class="example__item example__item--after slider__item">
+                <img src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот">
+              </li>
+            </ul>
+            <p class="example__toggles slider__toggles">
+              <button class="button slider__toggle" type="button">Было</button>
+              <button class="button slider__toggle" type="button">Стало</button>
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <section class="footer__contacts contacts">
-        <div class="contacts__info">
-          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-        </div>
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
-      </section>
-      <div class="footer__wrapper">
-        <a class="footer__logo">
-          <img class="footer__logo-image" src="img/logo-footer.svg" width="127" height="23" alt="Логотип Кэт энерджи">
-        </a>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook"  href="#">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <img class="copyright__link--image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTMLAcademy">
+      <div class="footer__container">
+        <section class="footer__contacts contacts">
+          <div class="contacts__info">
+            <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+            <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          </div>
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
+        </section>
+        <div class="footer__wrapper">
+          <a class="footer__logo">
+            <img class="footer__logo-image" src="img/logo-footer.svg" width="127" height="23" alt="Логотип Кэт энерджи">
           </a>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook"  href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <img class="copyright__link--image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип HTMLAcademy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

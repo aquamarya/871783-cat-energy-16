@@ -18,7 +18,7 @@
   }
 }
 
-.header__logo-image {
+.header__logo img {
   width: 190px;
   height: 37px;
   margin-top: 14px;
@@ -34,11 +34,12 @@
   }
 
   .header__logo {
-    width: 173px;
+    width: 192px;
     height: 66px;
   }
 
-  .header__logo-image {
+  .header__logo img {
+    display: block;
     margin-top: 24px;
     margin-left: 30px;
   }
@@ -46,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    min-height: 142px;
+    height: 142px;
   }
 
   .header__logo {
