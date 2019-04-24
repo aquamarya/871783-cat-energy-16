@@ -62,3 +62,18 @@ h5,
 h6 {
   font-weight: normal;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: $desktop-width) {
+  margin: 0 auto;
+  padding: 0 40px;
+}
