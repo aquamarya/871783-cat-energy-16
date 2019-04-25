@@ -1,6 +1,7 @@
 .info {
-  margin: 20px;
   margin-bottom: 40px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .info__title {
@@ -9,6 +10,10 @@
 }
 
 .info__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  margin-left: 80px;
   padding: 0;
   list-style: none;
 }
@@ -24,7 +29,6 @@
 
 .info__item {
   position: relative;
-  left: 80px;
 }
 
 .info__item--advantage::before,
@@ -34,14 +38,14 @@
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 10px;
   left: -80px;
 
   width: 60px;
   height: 60px;
 
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-color: $c-green;
 }
 
@@ -63,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .info {
-    margin: 30px;
+    margin-bottom: 30px;
 
     &__title {
       font-size: 60px;
@@ -72,21 +76,27 @@
 
     &__list {
       display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
       flex-wrap: wrap;
+      max-width: 640px;
       margin-top: 70px;
+      margin-left: 0;
     }
 
     &__item {
-      margin-right: 80px;
+      flex-basis: 35%;
+      margin-top: 150px;
+      margin-right: 90px;
     }
 
     &__description {
       position: relative;
-      top: 70px;
-      left: -80px;
+      top: -70px;
+      left: 0;
       margin-top: 35px;
-      margin-bottom: 160px;
-      width: 274px;
+      margin-bottom: 60px;
+
       font-size: 16px;
       line-height: 24px;
     }
@@ -98,20 +108,23 @@
   .info__item--result::before {
     width: 80px;
     height: 80px;
+    top: -154px;
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .info {
-    margin: 40px;
+    margin-bottom: 40px;
 
     &__list {
       display: flex;
       flex-direction: row;
+      max-width: 1220px;
     }
 
     &__item {
-      width: 245px;
+      flex-basis: 20%;
       margin-right: 80px;
     }
 

@@ -1,6 +1,6 @@
 .start-program {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 305px;
   margin: 0;
   margin-bottom: 195px;
@@ -12,6 +12,7 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
   background-color: $c-green;
 
   opacity: 1;
@@ -71,9 +72,9 @@
     }
   }
 
-  .start-program__product {
-    width: 620px;
-    height: 620px;
+  .start-program__product--image {
+    width: 100%;
+    height: 580px;
     background-repeat: no-repeat;
   }
 
@@ -107,14 +108,13 @@
       left: -540px;
     }
 
-    &__product {
+    &__product--image {
       display: block;
       position: absolute;
       top: 150px;
       left: -170px;
       width: 552px;
       height: 499px;
-      background-image: url("../../img/index-can-desktop@1x.png");
     }
 
     &__button {

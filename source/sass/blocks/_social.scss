@@ -1,6 +1,6 @@
 .footer__social {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   &::before {
@@ -8,7 +8,7 @@
 
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
 
     width: 280px;
     height: 2px;
@@ -20,7 +20,7 @@
 
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 0;
 
     width: 280px;
     height: 2px;

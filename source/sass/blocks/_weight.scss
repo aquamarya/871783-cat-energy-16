@@ -1,5 +1,7 @@
 .weight {
-  margin: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  box-sizing: border-box;
 
   &__item--lose {
     padding: 20px;
@@ -99,7 +101,7 @@
 
 @media (min-width: $tablet-width) {
   .weight {
-    margin: 30px;
+    /*  margin: 30px;` */
 
     &__item--lose,
     &__item--gain {
@@ -175,7 +177,7 @@
 
 @media (min-width: $desktop-width) {
   .weight {
-    margin: 40px;
+    /*  margin: 40px;  */
     display: flex;
 
     &__item--lose,
