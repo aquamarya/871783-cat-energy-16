@@ -88,7 +88,7 @@
         </ul>
       </section>
 
-      <section class="example">
+      <section class="example container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца,
           просто заменив свой обычный корм на Cat Energy Slim.
@@ -96,7 +96,7 @@
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
         <table class="example__calculation">
-          <tr>
+          <tr class="example__weight">
             <td class="example__value">
               5 кг
             </td>
@@ -104,7 +104,7 @@
               снижение<br> веса
             </td>
           </tr>
-          <tr>
+          <tr class="example__period">
             <td class="example__value">
               60 дней
             </td>
@@ -130,10 +130,19 @@
               <img src="img/after-mobile@1x.png" width="320" height="240" alt="Стройный кот">
             </li>
           </ul>
-          <p class="example__toggles slider__toggles">
-            <button class="button slider__toggle" type="button">Было</button>
-            <button class="button slider__toggle" type="button">Стало</button>
-          </p>
+          <ul class="example__toggles slider__toggles">
+            <li>
+              <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+            </li>
+            <li>
+              <div class="example__scale">
+                <div class="example__bar"></div>
+              </div>
+            </li>
+            <li>
+            <button class="slider__toggle slider__toggle--after" type="button">Стало</button>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

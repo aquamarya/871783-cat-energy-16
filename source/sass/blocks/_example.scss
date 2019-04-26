@@ -10,8 +10,7 @@
 
 .example__title {
   display: block;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0;
 
   font-size: 36px;
   line-height: 60px;
@@ -19,8 +18,8 @@
 
 .example__description {
   width: 280px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-bottom: 25px;
+  padding: 0;
 
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -39,26 +38,58 @@
 .example__calculation tr {
   width: 116px;
   padding: 10px 0;
+}
+
+.example__weight {
   margin-right: 20px;
+  border: 1px solid #cdcdcd;
+}
+
+.example__period {
   margin-left: 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
 }
 
 .example__calculation td {
   display: block;
   width: auto;
-  padding: 0;
 }
 
 .example__value {
-  font-size: 24px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__weight .example__value {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.example__weight .example__field {
+  position: absolute;
+  left: 40px;
+  padding: 0 15px;
+}
+
+.example__period .example__value {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.example__period .example__field {
+  position: absolute;
+  right: 40px;
+  padding: 0 15px;
 }
 
 .example__field {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   color: #444444;
+  background-color: $c-lightgray;
   text-align: center;
 }
 
@@ -68,6 +99,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
 
   border: none;
 }
@@ -97,6 +129,7 @@
     padding: 0;
 
     &__title {
+      margin-bottom: 0;
       padding: 30px;
       font-size: 60px;
       line-height: 60px;
