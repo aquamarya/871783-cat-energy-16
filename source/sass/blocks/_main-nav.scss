@@ -10,13 +10,13 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -66px;
+  top: -64px;
   right: 0;
   z-index: 2;
 
   display: block;
-  width: 66px;
-  height: 66px;
+  width: 64px;
+  height: 64px;
 
   background-color: $c-white;
 
@@ -37,7 +37,7 @@
 
   position: absolute;
 
-  top: 24px;
+  top: 23px;
   left: 22px;
 
   width: 24px;
@@ -52,7 +52,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -66px;
+  top: -64px;
   right: 0;
   left: auto;
 
