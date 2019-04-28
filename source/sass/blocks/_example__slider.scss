@@ -38,7 +38,6 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .example__scale {
@@ -95,5 +94,33 @@
     border-radius: 50%;
     border: 12px solid #ffffff;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__slider {
+    min-width: 650px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+
+  .slider__toggles {
+    width: 570px;
+  }
+
+  .example__scale {
+    width: 425px;
+  }
+
+  .slider__toggle--after {
+    margin-right: 0;
   }
 }

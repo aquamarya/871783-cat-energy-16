@@ -70,6 +70,7 @@
 @media (min-width: $tablet-width) {
   .info {
     margin-bottom: 30px;
+    padding-top: 40px;
 
     &__title {
       font-size: 60px;
@@ -117,12 +118,13 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    margin-bottom: 40px;
+    margin-bottom: 0;
 
     &__list {
       display: flex;
       flex-direction: row;
       max-width: 1220px;
+      margin-top: 74px;
     }
 
     &__item {
@@ -135,7 +137,9 @@
     }
 
     &__description {
+      top: -75px;
       width: 245px;
+      margin-bottom: 0;
     }
   }
 }

@@ -94,37 +94,45 @@
   .start-program {
     position: relative;
     top: -150px;
-    left: 650px;
+    left: 50%;
     margin: 0;
-    margin-bottom: -110px;
-    width: 720px;
-    height: 696px;
+    margin-bottom: -70px;
+    padding-bottom: 0;
+    max-width: 50%;
+    height: 700px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-color: $c-green;
 
     &__title {
       position: absolute;
-      top: 140px;
-      left: -540px;
+      top: 206px;
+      left: -530px;
     }
 
     &__text {
       position: absolute;
-      top: 340px;
-      left: -540px;
+      top: 390px;
+      left: -530px;
     }
 
     &__product--image {
       display: block;
       position: absolute;
-      top: 150px;
-      left: -170px;
-      width: 552px;
-      height: 499px;
+      top: 154px;
+      left: -200px;
+      width: 516px;
+      height: 500px;
     }
 
     &__button {
-      top: 400px;
-      left: -540px;
+      top: 464px;
+      left: -530px;
+      width: 246px;
+      padding: 17px 25px;
+      font-size: 20px;
     }
   }
 }

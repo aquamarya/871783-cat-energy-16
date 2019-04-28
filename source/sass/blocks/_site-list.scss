@@ -84,9 +84,10 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 480px;
-    margin-top: -118px;
-    margin-left: 180px;
-    padding: 64px 110px 64px 132px;
+    margin-top: -115px;
+    margin-left: 455px;
+    padding-top: 60px;
+    padding-left: 130px;
     z-index: 3;
   }
 
@@ -100,6 +101,10 @@
 
   .site-list__item::after {
     background: $c-white;
+  }
+
+  .site-list__item--active::after {
+    bottom: -12px;
   }
 
   .page-catalog .site-list a,
