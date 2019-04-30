@@ -45,7 +45,7 @@
 @media (min-width: $tablet-width) {
   .contacts__info {
     width: 630px;
-    padding: 30px 70px;
+    padding: 75px 70px 55px 70px;
     justify-content: space-between;
   }
 
@@ -80,10 +80,19 @@
 
   .contacts__info {
     position: absolute;
-    top: 80px;
-    left: 30px;
+    top: 92px;
+    left: 110px;
     width: 430px;
-    padding: 72px 74px;
+    padding: 60px 74px;
+  }
+
+  .page-catalog .contacts__info,
+  .page-form .contacts__info {
+    background-color: $c-white;
+  }
+
+  .contacts__text {
+    text-align: left;
   }
 
   .contacts__map {

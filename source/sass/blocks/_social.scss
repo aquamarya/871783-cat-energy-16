@@ -91,6 +91,11 @@
 @media (min-width: $desktop-width) {
   .footer__social {
     width: 132px;
-    margin: 34px 400px 34px 395px;
+    margin: 46px 400px 34px 395px;
+  }
+
+  .copyright {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }

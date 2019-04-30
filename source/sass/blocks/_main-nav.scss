@@ -159,8 +159,8 @@
     justify-content: space-between;
 
     width: 440px; /*  440px / 768px ~= 57% */
-    max-width: 480px; /*  480px / .57 ~= 842px */
-    margin: 0 auto;
+    max-width: 480px;
+    margin: 0;
   }
 
   .main-nav__toggle {

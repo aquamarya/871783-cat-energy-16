@@ -95,6 +95,15 @@
     height: 12px;
     background: url("../../img/icon-right-arrow-long.svg");
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -105,6 +114,7 @@
     &__item--lose,
     &__item--gain {
       padding: 52px;
+      padding-bottom: 62px;
     }
 
     &__item--lose {
@@ -112,12 +122,14 @@
     }
 
     &__title {
-      padding-left: 0;
+      width: 375px;
+      padding: 22px 0 10px 0;
       font-size: 36px;
       line-height: 36px;
 
       &::before {
-        left: 400px;
+        top: 38px;
+        left: 395px;
         width: 200px;
         height: 200px;
       }
@@ -131,15 +143,15 @@
   }
 
   .weight__item--lose .weight__title::after {
-    top: -3px;
-    left: 450px;
+    top: 27px;
+    left: 425px;
     width: 144px;
     height: 196px;
   }
 
   .weight__item--gain .weight__title::after {
-    top: 45px;
-    left: 366px;
+    top: 82px;
+    left: 360px;
     width: 268px;
     height: 114px;
   }
@@ -154,37 +166,32 @@
 
   .catalog-slim__to-all,
   .catalog-pro__to-all {
+    padding-top: 32px;
     font-size: 20px;
     line-height: 20px;
     border: none;
+  }
 
-    &::after {
-      top: 25px;
-      left: 130px;
-    }
+  .catalog-slim__to-all::after {
+    top: 37px;
+    left: 130px;
+  }
 
-    &:hover {
-      opacity: 0.7;
-    }
-
-    &:focus,
-    &:active {
-      opacity: 0.3;
-    }
+  .catalog-pro__to-all::after {
+    top: 37px;
+    left: 127px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .weight {
-    /*  margin: 40px;  */
+    max-width: 1440px;
     display: flex;
 
     &__item--lose,
     &__item--gain {
-      width: 570px;
+      width: 38%;
       margin: 0;
-      padding: 52px;
-      padding-bottom: 60px;
     }
 
     &__item--lose {
@@ -208,14 +215,14 @@
 
   .weight__item--lose .weight__title::after {
     top: -7px;
-    left: 17px;
+    left: 15px;
     width: 70px;
     height: 100px;
   }
 
   .weight__item--gain .weight__title::after {
     top: 20px;
-    left: -20px;
+    left: -18px;
     width: 140px;
     height: 60px;
   }

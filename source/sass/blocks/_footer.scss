@@ -49,13 +49,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer {
+    margin-top: 0;
+  }
+
   .footer__wrapper {
     display: flex;
     padding: 30px;
   }
 
   .footer__logo-image {
+    margin-top: 32px;
     margin-left: 0;
+  }
+
+  .copyright {
+    margin-left: 20px;
   }
 
   .copyright__link--image {

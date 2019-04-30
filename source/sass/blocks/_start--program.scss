@@ -53,14 +53,17 @@
     position: relative;
     display: block;
     max-width: 500px;
-    margin-left: 120px;
+    margin-bottom: 342px;
     padding-bottom: 240px;
     background: none;
     border: none;
 
     &__title {
       width: 440px;
-      margin-bottom: 35px;
+      margin-top: 74px;
+      margin-bottom: 42px;
+      margin-left: 87px;
+
       font-size: 60px;
       line-height: 60px;
       color: $c-black;
@@ -68,7 +71,9 @@
     }
 
     &__text {
+      width: 440px;
       margin-bottom: 20px;
+      margin-left: 90px;
       font-size: 20px;
       line-height: 20px;
       color: $c-black;
@@ -77,16 +82,21 @@
   }
 
   .start-program__product--image {
-    width: 500px;
+    width: 625px;
     height: auto;
+    margin-left: -10px;
     background-repeat: no-repeat;
     transform: translateX(15%);
   }
 
   .start-program__button {
     position: absolute;
-    top: 270px;
-    left: 0;
+    top: 305px;
+    left: 28px;
+    width: 246px;
+    margin-left: 90px;
+    padding: 17px 25px;
+    font-size: 20px;
   }
 }
 
@@ -98,7 +108,7 @@
     margin: 0;
     margin-bottom: -70px;
     padding-bottom: 0;
-    max-width: 50%;
+    max-width: 720px;
     height: 700px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -108,31 +118,28 @@
 
     &__title {
       position: absolute;
-      top: 206px;
-      left: -530px;
+      top: 157px;
+      left: -618px;
     }
 
     &__text {
       position: absolute;
       top: 390px;
-      left: -530px;
+      left: -618px;
     }
 
     &__product--image {
       display: block;
       position: absolute;
-      top: 154px;
-      left: -200px;
-      width: 516px;
+      top: 153px;
+      left: -196px;
+      width: 518px;
       height: 500px;
     }
 
     &__button {
       top: 464px;
-      left: -530px;
-      width: 246px;
-      padding: 17px 25px;
-      font-size: 20px;
+      left: -618px;
     }
   }
 }
