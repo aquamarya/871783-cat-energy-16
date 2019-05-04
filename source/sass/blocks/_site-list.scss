@@ -37,7 +37,7 @@
     justify-content: flex-end;
     width: 440px;
     margin-top: 43px;
-    margin-left: 102px;
+    margin-left: 23px;
   }
 
   .site-list__item {
@@ -84,10 +84,8 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 480px;
-    margin-top: -115px;
-    margin-left: 525px;
-    padding-top: 60px;
-    padding-left: 130px;
+    margin-top: -63px;
+    margin-left: -75px;
     z-index: 3;
   }
 
