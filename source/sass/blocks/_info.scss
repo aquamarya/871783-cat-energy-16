@@ -1,6 +1,8 @@
 .info {
-  margin: 20px;
-  margin-bottom: 40px;
+  margin-top: -14px;
+  margin-bottom: 35px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .info__title {
@@ -9,12 +11,17 @@
 }
 
 .info__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -13px;
+  margin-left: 80px;
   padding: 0;
   list-style: none;
 }
 
 .info__description {
   width: 200px;
+  margin-bottom: 12px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -22,48 +29,149 @@
   font-style: normal;
 }
 
+.info__item {
+  position: relative;
+}
+
+.info__item--advantage::before,
+.info__item--consist::before,
+.info__item--instruction::before,
+.info__item--result::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: -80px;
+
+  width: 60px;
+  height: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $c-green;
+}
+
+.info__item--advantage::before {
+  background-image: url("../../img/advantage-leaf@1x.png");
+}
+
+.info__item--consist::before {
+  background-image: url("../../img/advantage-powder@1x.png");
+}
+
+.info__item--instruction::before {
+  background-image: url("../../img/advantage-dining@1x.png");
+}
+
+.info__item--result::before {
+  background-image: url("../../img/advantage-clock@1x.png");
+}
+
 @media (min-width: $tablet-width) {
   .info {
-    margin: 30px;
+    margin-bottom: 0;
 
     &__title {
+      padding-top: 10px;
+      padding-bottom: 5px;
       font-size: 60px;
       line-height: 60px;
     }
 
     &__list {
+      position: relative;
       display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
       flex-wrap: wrap;
+      margin-top: 70px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    &__list::after {
+      content: "";
+
+      position: absolute;
+      bottom: 32px;
+      left: -30px;
+
+      width: 768px;
+      height: 2px;
+
+      background-color: #e6e6e6;
     }
 
     &__item {
-      width: 50%;
+      flex-basis: 35%;
+      margin-top: 150px;
     }
 
     &__description {
+      position: relative;
+      top: -70px;
+      left: 0;
       width: 250px;
+      margin-top: 30px;
+      margin-bottom: 65px;
+
       font-size: 16px;
       line-height: 24px;
     }
+  }
+
+  .info__item:nth-child(odd) {
+    margin-right: 130px;
+  }
+
+  .info__item--advantage::before,
+  .info__item--consist::before,
+  .info__item--instruction::before,
+  .info__item--result::before {
+    width: 80px;
+    height: 80px;
+    top: -154px;
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .info {
-    margin: 40px;
+    margin-bottom: 0;
+    padding-top: 30px;
 
     &__list {
       display: flex;
       flex-direction: row;
+      max-width: 1220px;
+      margin-top: 74px;
+    }
+
+    &__list::after {
+      display: none;
     }
 
     &__item {
-      width: 245px;
+      flex-basis: 20%;
+      margin-right: 80px;
+    }
+
+    &__item:nth-child(odd) {
       margin-right: 80px;
     }
 
     &__item:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &__title {
+      padding-bottom: 0;
+    }
+
+    &__description {
+      top: -73px;
+      width: 245px;
+      margin-bottom: 0;
     }
   }
 }

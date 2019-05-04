@@ -1,19 +1,131 @@
 .example__slider {
   margin: 0;
-  width: 320px;
+  min-width: 100%;
+}
+
+.example__item--before {
+  display: block;
+  margin-left: -20px;
+  min-width: 320px;
+}
+
+.example__item--after {
+  display: none;
+  margin-left: -20px;
+  min-width: 320px;
 }
 
 .slider__list {
   list-style: none;
-  padding-left: -40px;
+  padding: 0;
 }
 
 .slider__toggles {
   display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-bottom: 35px;
+  list-style: none;
 }
 
 .slider__toggle {
   width: 45px;
+  font-size: 16px;
   color: $c-black;
+  text-transform: uppercase;
   background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.example__scale {
+  min-width: 84px;
+  width: 100%;
+  margin-top: 5px;
+  height: 14px;
+  border: 1px solid $c-mouse-gray;
+  border-radius: 50px;
+  background: #ffffff;
+}
+
+.example__bar {
+  position: relative;
+  top: 4px;
+  left: 5px;
+  width: 37px;
+  height: 6px;
+  background-color: $c-green;
+  border-radius: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    width: 45px;
+    font-size: 20px;
+  }
+
+  .slider__toggle--before {
+    margin-left: 60px;
+  }
+
+  .slider__toggle--after {
+    margin-right: 60px;
+  }
+
+  .example__scale {
+    position: relative;
+    top: 3px;
+    justify-content: center;
+    width: 430px;
+    height: 6px;
+    padding: 0 5px;
+    background-color: #dcdcdc;
+  }
+
+  .example__bar {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    align-self: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 12px solid #ffffff;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__slider {
+    min-width: 650px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 25px;
+  }
+
+  .example__item--before {
+    height: 500px;
+  }
+
+  .slider__toggles {
+    width: 570px;
+  }
+
+  .example__scale {
+    width: 425px;
+  }
+
+  .slider__toggle--after {
+    margin-right: 0;
+  }
 }

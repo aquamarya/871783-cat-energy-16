@@ -1,6 +1,6 @@
 .footer__social {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 
   &::before {
@@ -8,7 +8,7 @@
 
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 0;
 
     width: 280px;
     height: 2px;
@@ -20,7 +20,7 @@
 
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 0;
 
     width: 280px;
     height: 2px;
@@ -31,9 +31,9 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  width: 130px;
+  width: 124px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 22px 12px;
   list-style: none;
 }
 
@@ -91,6 +91,11 @@
 @media (min-width: $desktop-width) {
   .footer__social {
     width: 132px;
-    margin: 34px 400px 34px 395px;
+    margin: 46px 400px 34px 395px;
+  }
+
+  .copyright {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
