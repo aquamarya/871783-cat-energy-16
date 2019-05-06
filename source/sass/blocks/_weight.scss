@@ -187,6 +187,8 @@
   .weight {
     max-width: 1440px;
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &__item--lose,
     &__item--gain {
