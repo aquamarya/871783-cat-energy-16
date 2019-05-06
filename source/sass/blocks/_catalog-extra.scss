@@ -30,3 +30,11 @@
 .catalog-extra__value {
   margin-left: auto;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__extra {
+    width: 1300px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
