@@ -17,6 +17,10 @@
 
   opacity: 1;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+
   &__title {
     display: block;
     margin-top: 25px;
@@ -40,11 +44,10 @@
   }
 
   &__product {
-    width: 280px;
     height: 271px;
 
     background-repeat: no-repeat;
-    transform: translateX(7%);
+    /*transform: translateX(7%);*/
   }
 }
 
@@ -110,13 +113,18 @@
     margin: 0;
     margin-bottom: -70px;
     padding-bottom: 0;
-    max-width: 720px;
-    height: 700px;
+    max-width: 680px;
+    height: 696px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
     background-color: $c-green;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 680px 696px;
+    }
 
     &__title {
       position: absolute;
@@ -141,7 +149,7 @@
 
     &__button {
       top: 464px;
-      left: -618px;
+      left: -590px;
     }
   }
 }
