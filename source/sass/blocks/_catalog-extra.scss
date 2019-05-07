@@ -121,18 +121,34 @@
     margin: 0 auto;
   }
 
+  .catalog-extra__title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
   .catalog-extra__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-  .catalog-extra__list {
+  .catalog-extra__items {
+    display: flex;
     flex-direction: column;
     width: 895px;
     margin-right: 80px;
   }
 
-  .catalog-extra__item {
-    flex-direction: column;
+  .catalog-extra__item-title {
+    width: 245px;
+  }
+
+  .catalog-extra__list {
+    width: 285px;
+  }
+
+  .catalog-extra__order {
+    width: 245px;
   }
 }
