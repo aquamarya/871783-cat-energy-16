@@ -69,55 +69,73 @@
 
 @media (min-width: $tablet-width) {
   .info {
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 0;
+    counter-reset: item;
+  }
 
-    &__title {
-      padding-top: 10px;
-      padding-bottom: 5px;
-      font-size: 60px;
-      line-height: 60px;
-    }
+  .info__title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-    &__list {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin-top: 70px;
-      margin-bottom: 0;
-      margin-left: 0;
-    }
+  .info__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 
-    &__list::after {
-      content: "";
+  .info__list::after {
+    content: "";
 
-      position: absolute;
-      bottom: 32px;
-      left: -30px;
+    position: absolute;
+    bottom: 32px;
+    left: -30px;
 
-      width: 768px;
-      height: 2px;
+    width: 768px;
+    height: 2px;
 
-      background-color: #e6e6e6;
-    }
+    background-color: #e6e6e6;
+  }
 
-    &__item {
-      flex-basis: 35%;
-      margin-top: 150px;
-    }
+  .info__item {
+    flex-basis: 35%;
+    margin-top: 150px;
+  }
 
-    &__description {
-      position: relative;
-      top: -70px;
-      left: 0;
-      width: 250px;
-      margin-top: 30px;
-      margin-bottom: 65px;
+  .info__item::after {
+    counter-increment: item;
+    content: counter(item) "";
+    position: absolute;
+    top: -150px;
+    left: 130px;
 
-      font-size: 16px;
-      line-height: 24px;
-    }
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-size: 280px;
+    line-height: 202px;
+    font-weight: 400;
+    color: $c-lightgray;
+    z-index: -1;
+  }
+
+  .info__description {
+    position: relative;
+    top: -70px;
+    left: 0;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .info__item:nth-child(odd) {
@@ -139,39 +157,41 @@
   .info {
     margin-bottom: 0;
     padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-    &__list {
-      display: flex;
-      flex-direction: row;
-      max-width: 1220px;
-      margin-top: 74px;
-    }
+  .info__list {
+    display: flex;
+    flex-direction: row;
+    max-width: 1220px;
+    margin-top: 74px;
+  }
 
-    &__list::after {
-      display: none;
-    }
+  .info__list::after {
+    display: none;
+  }
 
-    &__item {
-      flex-basis: 20%;
-      margin-right: 80px;
-    }
+  .info__item {
+    flex-basis: 20%;
+    margin-right: 80px;
+  }
 
-    &__item:nth-child(odd) {
-      margin-right: 80px;
-    }
+  .info__item:nth-child(odd) {
+    margin-right: 80px;
+  }
 
-    &__item:nth-child(4n) {
-      margin-right: 0;
-    }
+  .info__item:nth-child(4n) {
+    margin-right: 0;
+  }
 
-    &__title {
-      padding-bottom: 0;
-    }
+  .info__title {
+    padding-bottom: 0;
+  }
 
-    &__description {
-      top: -73px;
-      width: 245px;
-      margin-bottom: 0;
-    }
+  .info__description {
+    top: -73px;
+    width: 245px;
+    margin-bottom: 0;
   }
 }

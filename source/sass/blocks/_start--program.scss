@@ -17,35 +17,38 @@
 
   opacity: 1;
 
-  &__title {
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: normal;
-    color: $c-white;
-    text-align: center;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
   }
+}
 
-  &__text {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 14px;
-    color: $c-white;
-    text-align: center;
-    text-transform: uppercase;
-  }
+.start-program__title {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
-  &__product {
-    width: 280px;
-    height: 271px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: $c-white;
+  text-align: center;
+}
 
-    background-repeat: no-repeat;
-    transform: translateX(7%);
-  }
+.start-program__text {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $c-white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.start-program__product {
+  height: 271px;
+
+  background-repeat: no-repeat;
+  /*transform: translateX(7%);*/
 }
 
 @media (min-width: $tablet-width) {
@@ -59,28 +62,28 @@
     padding-bottom: 240px;
     background: none;
     border: none;
+  }
 
-    &__title {
-      width: 440px;
-      margin-top: 74px;
-      margin-bottom: 42px;
-      margin-left: 37px;
+  .start-program__title {
+    width: 440px;
+    margin-top: 74px;
+    margin-bottom: 42px;
+    margin-left: 37px;
 
-      font-size: 60px;
-      line-height: 60px;
-      color: $c-black;
-      text-align: left;
-    }
+    font-size: 60px;
+    line-height: 60px;
+    color: $c-black;
+    text-align: left;
+  }
 
-    &__text {
-      width: 440px;
-      margin-bottom: 20px;
-      margin-left: 37px;
-      font-size: 20px;
-      line-height: 20px;
-      color: $c-black;
-      text-align: left;
-    }
+  .start-program__text {
+    width: 440px;
+    margin-bottom: 20px;
+    margin-left: 37px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $c-black;
+    text-align: left;
   }
 
   .start-program__product--image {
@@ -106,42 +109,45 @@
   .start-program {
     position: relative;
     top: -150px;
-    left: 50%;
+    max-width: 100%;
     margin: 0;
     margin-bottom: -70px;
     padding-bottom: 0;
-    max-width: 720px;
-    height: 700px;
+
+    height: 696px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    background-color: $c-green;
+    background-color: $c-white;
 
-    &__title {
-      position: absolute;
-      top: 157px;
-      left: -618px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: 680px 696px;
     }
 
-    &__text {
-      position: absolute;
-      top: 390px;
-      left: -618px;
+    .start-program__title {
+      margin-top: 225px;
+      margin-left: 115px;
     }
 
-    &__product--image {
+    .start-program__text {
+      margin-top: 40px;
+      margin-left: 115px;
+    }
+
+    .start-program__product--image {
       display: block;
-      position: absolute;
-      top: 153px;
-      left: -196px;
+
       width: 518px;
       height: 500px;
+      transform: translateX(104%) translateY(-55%);
     }
 
-    &__button {
-      top: 464px;
-      left: -618px;
+    .start-program__button {
+      top: 460px;
+      left: 110px;
+      margin-left: 7px;
     }
   }
 }

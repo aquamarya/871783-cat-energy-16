@@ -139,23 +139,23 @@
     background: linear-gradient(#ffffff 56%, #f2f2f2 44%);
     margin: 0;
     padding: 0;
+  }
 
-    &__title {
-      margin-top: 11px;
-      margin-bottom: 0;
-      padding: 30px;
-      padding-top: 0;
-      font-size: 60px;
-      line-height: 60px;
-    }
+  .example__title {
+    margin-top: 11px;
+    margin-bottom: 0;
+    padding: 30px;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-    &__description {
-      padding: 30px;
-      padding-top: 18px;
-      width: 708px;
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .example__description {
+    padding: 30px;
+    padding-top: 18px;
+    width: 708px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .example__calculation tbody {
@@ -217,21 +217,19 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    padding-right: 70px;
-    padding-left: 70px;
     height: 650px;
     background: linear-gradient(#ffffff 26%, #f2f2f2 26%);
+  }
 
-    &__title {
-      margin-top: 22px;
-      padding: 30px 40px;
-    }
+  .example__title {
+    margin-top: 22px;
+    padding: 30px 40px;
+  }
 
-    &__description {
-      width: 440px;
-      margin-top: 77px;
-      padding: 40px;
-    }
+  .example__description {
+    width: 440px;
+    margin-top: 77px;
+    padding: 40px;
   }
 
   .example__calculation tbody {

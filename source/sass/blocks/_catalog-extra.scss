@@ -1,5 +1,13 @@
 .catalog-extra {
+  width: 100%;
   margin-bottom: 20px;
+}
+
+.catalog-extra__item {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .catalog-extra__title {
@@ -16,6 +24,7 @@
 
 .catalog-extra__list {
   display: flex;
+  width: 100%;
 }
 
 .catalog-extra__field,
@@ -27,6 +36,119 @@
   font-style: normal;
 }
 
+.catalog-extra__field {
+  width: 140px;
+  padding-left: 0;
+  text-align: left;
+}
+
 .catalog-extra__value {
-  margin-left: auto;
+  width: 140px;
+  padding-right: 0;
+
+  text-align: right;
+}
+
+.catalog-extra__order {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.catalog-offer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 38px 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-color: $c-green;
+
+  opacity: 1;
+}
+
+.catalog-offer__description {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 46px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $c-white;
+  text-align: center;
+}
+
+.catalog-offer__description::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+
+  background-image: url("../../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-offer__description {
+    display: flex;
+  }
+
+  .catalog-extra__item {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    border: 1px solid #cdcdcd;
+  }
+
+  .catalog-extra__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__extra {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .catalog-extra__title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .catalog-extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .catalog-extra__items {
+    display: flex;
+    flex-direction: column;
+    width: 895px;
+    margin-right: 80px;
+  }
+
+  .catalog-extra__item-title {
+    width: 245px;
+  }
+
+  .catalog-extra__list {
+    width: 285px;
+  }
+
+  .catalog-extra__order {
+    width: 245px;
+  }
 }
