@@ -1,5 +1,6 @@
 .weight {
   padding: 0;
+  padding-top: 20px;
   box-sizing: border-box;
 
   &__item--lose {
@@ -192,7 +193,7 @@
 
     &__item--lose,
     &__item--gain {
-      width: 38%;
+      width: 36%;
       margin: 0;
     }
 
@@ -202,6 +203,7 @@
   }
 
   .weight__title {
+    width: 325px;
     padding-top: 29px;
     padding-bottom: 32px;
     padding-left: 165px;
