@@ -188,12 +188,13 @@
   .weight {
     max-width: 1440px;
     display: flex;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 40px;
 
     &__item--lose,
     &__item--gain {
-      width: 36%;
+      width: 38%;
       margin: 0;
     }
 

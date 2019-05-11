@@ -55,13 +55,18 @@
   .start-program {
     position: relative;
     display: block;
-    max-width: 500px;
+
     margin-bottom: 342px;
-    margin-right: auto;
-    margin-left: auto;
+
     padding-bottom: 240px;
     background: none;
     border: none;
+  }
+
+  .start-program__wrapper {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .start-program__title {
@@ -123,12 +128,12 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/index-background-desktop@2x.jpg");
-      background-size: 680px 696px;
+      background-size: 50% 696px;
     }
 
     .start-program__title {
-      margin-top: 225px;
-      margin-left: 115px;
+      margin-top: 230px;
+      margin-left: 80px;
     }
 
     .start-program__text {
