@@ -26,6 +26,21 @@
     height: 2px;
     background: $c-mouse-gray;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin: 34px 100px 34px 135px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    margin: 46px 400px 34px 395px;
+  }
 }
 
 .social__list {
@@ -35,6 +50,10 @@
   margin: 0 auto;
   padding: 20px 20px 22px 12px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__item {
@@ -47,53 +66,55 @@
   opacity: 0.6;
 }
 
-.social__link--vkontakte {
-  width: 24px;
-  height: 12px;
-  background: url("../../img/icon-vk-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-.social__link--instagram {
-  width: 16px;
-  height: 16px;
-  background: url("../../img/icon-insta-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-.social__link--facebook {
-  width: 10px;
-  height: 19px;
-  background: url("../../img/icon-fb-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__social {
-    width: 162px;
-    margin: 34px 100px 34px 135px;
-
-    &::before,
-    &::after {
-      display: none;
-    }
+.social__image-vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
   }
 
-  .social {
-    border: none;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image-insta {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
   }
 
-  .social__list {
-    padding: 0;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image-fb {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image-vk,
+.social__image-insta,
+.social__image-fb,
+.copyright__logo-icon-academy {
+  fill: #666666;
+
+  &:hover {
+    fill: $c-green;
+  }
+
+  &:active {
+    fill: $c-green;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer__social {
-    width: 132px;
-    margin: 46px 400px 34px 395px;
-  }
-
   .copyright {
     margin-left: 0;
     margin-top: 20px;
