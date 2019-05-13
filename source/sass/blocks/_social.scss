@@ -101,8 +101,7 @@
 
 .social__image-vk,
 .social__image-insta,
-.social__image-fb,
-.copyright__logo-icon-academy {
+.social__image-fb {
   fill: #666666;
 
   &:hover {
@@ -111,12 +110,5 @@
 
   &:active {
     fill: $c-green;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    margin-left: 0;
-    margin-top: 20px;
   }
 }

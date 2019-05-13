@@ -46,9 +46,15 @@
 
 .start-program__product {
   height: 271px;
+  margin-bottom: 2px;
 
   background-repeat: no-repeat;
   /*transform: translateX(7%);*/
+}
+
+.start-program__button {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {

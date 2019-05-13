@@ -40,11 +40,15 @@
   cursor: pointer;
 }
 
+.slider__toggle--before {
+  margin-left: -3px;
+}
+
 .example__scale {
-  min-width: 84px;
+  min-width: 82px;
   width: 100%;
   margin-top: 5px;
-  height: 14px;
+  height: 12px;
   border: 1px solid $c-mouse-gray;
   border-radius: 50px;
   background: #ffffff;
@@ -52,9 +56,9 @@
 
 .example__bar {
   position: relative;
-  top: 4px;
+  top: 3px;
   left: 5px;
-  width: 37px;
+  width: 35px;
   height: 6px;
   background-color: $c-green;
   border-radius: 10px;
