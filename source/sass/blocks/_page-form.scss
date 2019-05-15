@@ -2,6 +2,7 @@
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .program-form {
@@ -10,6 +11,7 @@
   line-height: 18px;
   font-style: normal;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .cat-info__list {
@@ -22,4 +24,8 @@
 
 .filter__list {
   list-style: none;
+}
+
+.cat-info__item input {
+  text-transform: uppercase;
 }
