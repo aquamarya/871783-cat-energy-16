@@ -65,20 +65,20 @@
         <ul class="filter-options">
           <li class="filter-option filter-option__losing-weight">
             <input id="losing-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="losing-weight" checked>
-            <label for="losing-weight">Похудение</label>
+            <label for="losing-weight" class="filter-option__label--radio">Похудение</label>
           </li>
           <li class="filter-option filter-option__gain-weight">
             <input  id="gain-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="gain-weight">
-            <label for="gain-weight">Набор массы</label>
+            <label for="gain-weight" class="filter-option__label--radio">Набор массы</label>
           </li>
           <li class="filter-option filter-option__need-advice">
             <input id="need-advice" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="need-advice">
-            <label for="need-advice">Не знаю (нужен ваш совет)</label>
+            <label for="need-advice" class="filter-option__label--radio">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </div>
       <div class="user-info">
-        <h3 class="user-info__items">Контактные данные (владельца кота)</h3>
+        <h3 class="user-info__title">Контактные данные (владельца кота)</h3>
         <div class="user-info__item">
           <label for="user__email">E-mail:*</label>
           <input  id="user__email" class="user__input" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
@@ -98,31 +98,31 @@
         <h3 class="comment__title">Комментарий</h3>
           <textarea id="comment__text" name="comment__text" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
-      <div class="extra">
-        <h3 class="filter__extra">Дополнительно</h3>
-        <ul class="filter__list">
-          <li class="filter__item">
-            <input id="sweetener" class="filter__input filter__input--checkbox" type="checkbox" name="extra-product__sweetener" checked>
-            <label for="sweetener">Сахарозаменитель</label>
+      <div class="filter-extra">
+        <h3 class="filter-extra__title">Дополнительно</h3>
+        <ul class="filter-extra__list">
+          <li class="filter-extra__item">
+            <input id="sweetener" class="filter-extra__input filter-extra__input--checkbox" type="checkbox" name="extra-product__sweetener" checked>
+            <label for="sweetener" class="filter-extra__label">Сахарозаменитель</label>
           </li>
-          <li class="filter__item">
-            <input id="water" class="filter__input filter__input--checkbox" type="checkbox" name="extra-product__water">
-            <label for="water">Питьевая вода</label>
+          <li class="filter-extra__item">
+            <input id="water" class="filter-extra__input filter-extra__input--checkbox" type="checkbox" name="extra-product__water">
+            <label for="water" class="filter-extra__label">Питьевая вода</label>
           </li>
-          <li class="filter__item">
-            <input id="milk" class="filter__input filter__input--checkbox" type="checkbox" name="extra-product__milk">
-            <label for="milk">Молоко</label>
+          <li class="filter-extra__item">
+            <input id="milk" class="filter-extra__input filter-extra__input--checkbox" type="checkbox" name="extra-product__milk">
+            <label for="milk" class="filter-extra__label">Молоко</label>
           </li>
-          <li class="filter__item">
-            <input id="vitamins" class="filter__input filter__input--checkbox" type="checkbox" name="extra-product__vitamins">
-            <label for="vitamins">Витамины</label>
+          <li class="filter-extra__item">
+            <input id="vitamins" class="filter-extra__input filter-extra__input--checkbox" type="checkbox" name="extra-product__vitamins">
+            <label for="vitamins" class="filter-extra__label">Витамины</label>
           </li>
         </ul>
       </div>
-      <button type="submit" class="button filter-button">
+      <button type="submit" class="button filter-extra__button">
         Отправить заявку
       </button>
-      <span class="program-form__legend program-form__legend--bottom">*—Обязательные поля</span>
+      <span class="program-form__legend program-form__legend--bottom"><sup>*</sup> — Обязательные поля</span>
     </form>
   </div>
 </main>
