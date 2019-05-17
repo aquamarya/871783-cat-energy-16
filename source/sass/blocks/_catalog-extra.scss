@@ -1,22 +1,22 @@
 .catalog-extra {
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.catalog-extra__item {
-  position: relative;
-  display: inline-block;
-  width: 280px;
-  border-bottom: 1px solid #cdcdcd;
+.catalog-extra::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  z-index: 1;
+  width: 246px;
+  height: 3px;
+
+  background-color: $c-white;
 }
 
-.catalog-extra__title {
-  position: relative;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.catalog-extra__title::after {
+.catalog-extra::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -28,8 +28,28 @@
   background-color: $c-green;
 }
 
+.catalog-extra__item {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.catalog-extra__title {
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 34px;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 2;
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .catalog-extra__item-title {
   position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
   color: $c-black;
@@ -39,6 +59,7 @@
 .catalog-extra__list {
   display: flex;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .catalog-extra__field,
@@ -64,8 +85,8 @@
 }
 
 .catalog-extra__order {
-  margin-top: 17px;
-  margin-bottom: 17px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-offer {

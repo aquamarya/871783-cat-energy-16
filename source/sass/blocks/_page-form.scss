@@ -70,7 +70,7 @@
   border-radius: 50%;
 }
 
-.filter-option__label--radio::after {
+input:checked + .filter-option__label--radio::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -128,7 +128,7 @@
 .user-info__item input,
 .comment textarea {
   text-transform: uppercase;
-  color: $c-black;
+  color: $c-darkgray;
 }
 
 .user__input {
@@ -142,6 +142,7 @@
   margin-top: 14px;
   padding: 15px;
   resize: none;
+  box-sizing: border-box;
 }
 
 .user-info__title,
@@ -199,3 +200,31 @@
   line-height: 16px;
   text-transform: none;
 }
+
+.user-info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info__item-inner {
+  flex: 1;
+  position: relative;
+  width: auto;
+
+  > svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  > input {
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 14px;
+    margin-left: 10px;
+  }
+}
+

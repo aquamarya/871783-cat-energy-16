@@ -45,7 +45,9 @@
 }
 
 .start-program__product {
+  position: relative;
   height: 271px;
+  margin-top: 20px;
   margin-bottom: 2px;
 
   background-repeat: no-repeat;
@@ -53,6 +55,8 @@
 }
 
 .start-program__button {
+  position: absolute;
+  bottom: -175px;
   font-size: 14px;
   line-height: 18px;
 }
