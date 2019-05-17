@@ -1,13 +1,13 @@
 .catalog-extra {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .catalog-extra::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 22px;
   left: 0;
   z-index: 1;
   width: 246px;
@@ -19,7 +19,7 @@
 .catalog-extra::after {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 22px;
   right: -20px;
   z-index: -1;
   width: 100%;
@@ -48,7 +48,7 @@
 
 .catalog-extra__item-title {
   position: relative;
-  margin-top: 10px;
+  margin-top: 11px;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
@@ -85,8 +85,10 @@
 }
 
 .catalog-extra__order {
-  margin-top: 16px;
+  margin-top: 15px;
   margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .catalog-offer {
@@ -106,7 +108,7 @@
   position: relative;
   width: 170px;
   margin: -100% auto 0;
-  padding-top: 190px;
+  padding-top: 175px;
   padding-bottom: 26px;
 
   font-family: "Arial", sans-serif;
@@ -119,7 +121,7 @@
 .catalog-offer__description::before {
   content: "";
   position: absolute;
-  top: 65px;
+  top: 53px;
   left: 60px;
   width: 60px;
   height: 60px;
