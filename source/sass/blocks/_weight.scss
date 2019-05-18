@@ -115,7 +115,7 @@
     &__item--lose,
     &__item--gain {
       padding: 52px;
-      padding-bottom: 62px;
+      padding-bottom: 61px;
     }
 
     &__item--lose {
@@ -125,7 +125,7 @@
 
   .weight__title {
     width: 375px;
-    padding: 22px 0 10px 0;
+    padding: 23px 0 10px 0;
     font-size: 36px;
     line-height: 36px;
 
@@ -144,8 +144,8 @@
   }
 
   .weight__item--lose .weight__title::after {
-    top: 27px;
-    left: 425px;
+    top: 26px;
+    left: 424px;
     width: 144px;
     height: 196px;
   }

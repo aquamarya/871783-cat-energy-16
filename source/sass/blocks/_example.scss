@@ -143,16 +143,14 @@
 
   .example__title {
     margin-top: 11px;
-    margin-bottom: 0;
-    padding: 30px;
+    padding-bottom: 30px;
     padding-top: 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__description {
-    padding: 30px;
-    padding-top: 18px;
+    padding: 13px 0 25px 0;
     width: 708px;
     font-size: 16px;
     line-height: 24px;
@@ -163,7 +161,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 708px;
-    padding: 30px;
+    padding-bottom: 30px;
     padding-top: 0;
   }
 
@@ -200,7 +198,7 @@
   .example__calculation tr.example__total {
     justify-content: flex-end;
     width: 190px;
-
+    margin-top: -1px;
     padding-left: 0;
     padding-right: 0;
   }

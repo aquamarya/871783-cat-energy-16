@@ -70,7 +70,7 @@
 @media (min-width: $tablet-width) {
   .contacts__info {
     width: 630px;
-    padding: 75px 70px 55px 70px;
+    padding: 58px 70px 53px 70px;
     justify-content: space-between;
   }
 
@@ -93,8 +93,16 @@
     line-height: 20px;
   }
 
+  .contacts__map--wrapper {
+    min-height: 398px;
+  }
+
   .contacts__map {
-    min-height: 395px;
+    min-height: 398px;
+  }
+
+  .contacts__embed-map {
+    margin-top: -399px;
   }
 }
 

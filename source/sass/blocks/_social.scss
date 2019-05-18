@@ -53,6 +53,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-top: -8px;
+    margin-left: 22px;
   }
 }
 
@@ -68,8 +70,9 @@
 
 .social__image-vk {
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 16px;
+    width: 32px;
+    height: 18px;
+    margin-bottom: 4px;
   }
 
   &:active {
@@ -79,8 +82,8 @@
 
 .social__image-insta {
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   &:active {
@@ -90,8 +93,8 @@
 
 .social__image-fb {
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 16px;
+    width: 18px;
+    height: 28px;
   }
 
   &:active {
