@@ -39,10 +39,6 @@
   margin: 0;
   padding: 20px 0 40px 0;
 
-  @media (min-width: $tablet-width) {
-    margin-left: 36px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-top: 20px;
@@ -61,8 +57,8 @@
 
 .copyright__link--title {
   @media (min-width: $tablet-width) {
-    width: 120px;
-    margin-right: 20px;
+    width: 130px;
+    margin: 0;
   }
 }
 
@@ -92,6 +88,10 @@
 
   &:active {
     fill: $c-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
   }
 }
 

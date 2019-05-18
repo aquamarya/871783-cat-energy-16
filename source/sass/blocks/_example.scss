@@ -136,9 +136,19 @@
     align-content: space-between;
     align-items: flex-start;
     height: 1050px;
-    background: linear-gradient(#ffffff 56%, #f2f2f2 44%);
+    background: $c-white;
     margin: 0;
     padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 46%;
+      background: linear-gradient(to right, $c-lightgray 50%, #eaeaea 50%);
+    }
   }
 
   .example__title {

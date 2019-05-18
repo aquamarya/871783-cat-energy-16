@@ -83,15 +83,18 @@
 
   .example__item--before {
     clip: rect(auto, 345px, auto, auto);
+    z-index: 2;
   }
 
   .example__item--after {
     display: block;
     clip: rect(auto, auto, auto, 345px);
+    z-index: 2;
   }
 
   .slider__toggles {
     padding-top: 0;
+    z-index: 2;
   }
 
   .slider__toggle {
@@ -109,7 +112,7 @@
   .slider__toggle--after {
     margin-right: 60px;
     margin-left: 10px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .example__scale {
@@ -120,6 +123,7 @@
     height: 4px;
     padding: 0 5px;
     background-color: #dcdcdc;
+    z-index: 2;
   }
 
   .example__bar {
@@ -132,6 +136,7 @@
     border-radius: 50%;
     border: 12px solid #ffffff;
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    z-index: 2;
   }
 }
 
