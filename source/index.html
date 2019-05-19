@@ -108,32 +108,34 @@
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <table class="example__calculation">
-            <tr class="example__weight">
-              <td class="example__value">
-                5 кг
-              </td>
-              <td class="example__field">
-                снижение<br> веса
-              </td>
-            </tr>
-            <tr class="example__period">
-              <td class="example__value">
-                60 дней
-              </td>
-              <td class="example__field">
-                затрачено<br> времени
-              </td>
-            </tr>
-            <tr class="example__total">
-              <td class="example__value example__value--total">
+          <div class="example__calculation">
+            <div class="example__calculation-list">
+              <div class="example__calculation-item example__weight">
+                <span class="example__value">
+                  5 кг
+                </span>
+                <span class="example__field">
+                  снижение<br> веса
+                </span>
+              </div>
+              <div class="example__calculation-item example__period">
+                <span class="example__value">
+                  60 дней
+                </span>
+                <span class="example__field">
+                  затрачено<br> времени
+                </span>
+              </div>
+            </div>
+            <div class="example__calculation-item example__total">
+              <span class="example__value example__value--total">
                 Затраты на питание:
-              </td>
-              <td class="example__field example__field--total">
+              </span>
+              <span class="example__field example__field--total">
                 15 000 руб.
-              </td>
-            </tr>
-          </table>
+              </span>
+            </div>
+          </div>
           <div class="example__slider">
             <ul class="example__list slider__list">
               <li class="example__item example__item--before slider__item">
@@ -181,7 +183,10 @@
       <section class="footer__contacts contacts">
         <div class="contacts__info">
           <h3 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-          <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          <div class="contacts__text">
+            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </div>
         </div>
         <div class="contacts__map--wrapper">
           <picture>

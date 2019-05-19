@@ -31,14 +31,14 @@
   font-style: normal;
 }
 
-.example__calculation tbody {
+.example__calculation {
   display: flex;
   flex-wrap: wrap;
 
   border-collapse: collapse;
 }
 
-.example__calculation tr {
+.example__calculation-item {
   width: 116px;
   padding: 10px 2px;
 }
@@ -57,7 +57,7 @@
   border-radius: 2px;
 }
 
-.example__calculation td {
+.example__calculation {
   display: block;
   width: auto;
 }
@@ -97,7 +97,7 @@
   text-align: center;
 }
 
-.example__calculation tr.example__total {
+.example__calculation .example__total {
   position: relative;
 
   display: flex;
@@ -166,7 +166,7 @@
     line-height: 24px;
   }
 
-  .example__calculation tbody {
+  .example__calculation {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -175,7 +175,7 @@
     padding-top: 0;
   }
 
-  .example__calculation tr {
+  .example__calculation-item {
     padding: 14px 22px;
   }
 
@@ -205,7 +205,7 @@
     right: 69.5%;
   }
 
-  .example__calculation tr.example__total {
+  .example__calculation .example__total {
     justify-content: flex-end;
     width: 190px;
     margin-top: -1px;
@@ -240,13 +240,13 @@
     padding: 40px;
   }
 
-  .example__calculation tbody {
+  .example__calculation {
     flex-wrap: wrap;
     width: 375px;
     padding-left: 40px;
   }
 
-  .example__calculation tr {
+  .example__calculation-item {
     padding: 15px 22px;
   }
 
@@ -273,7 +273,7 @@
     padding: 0 5px;
   }
 
-  .example__calculation tr.example__total {
+  .example__calculation .example__total {
     justify-content: space-between;
     width: 325px;
     margin-right: 30px;
