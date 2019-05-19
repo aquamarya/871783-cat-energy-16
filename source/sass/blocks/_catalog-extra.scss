@@ -12,7 +12,7 @@
 .catalog-extra::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 23px;
   left: 0;
   z-index: 1;
   width: 246px;
@@ -21,6 +21,7 @@
   background-color: $c-white;
 
   @media (min-width: $tablet-width) {
+    top: 30px;
     width: 410px;
   }
 }
@@ -28,7 +29,7 @@
 .catalog-extra::after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 23px;
   right: -20px;
   z-index: -1;
   width: 100%;
@@ -37,6 +38,7 @@
   background-color: $c-green;
 
   @media (min-width: $tablet-width) {
+    top: 30px;
     width: 768px;
   }
 }
