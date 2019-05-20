@@ -1,25 +1,44 @@
+.contacts {
+  background-color: $c-white;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__info {
   display: flex;
   justify-content: flex-start;
   width: 280px;
-  padding: 20px;
+  padding: 20px 0;
   background-color: $c-white;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    padding: 58px 70px 53px 70px;
+    width: 626px;
     justify-content: space-between;
+    padding: 58px 30px 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 92px;
+    left: 110px;
+    width: 430px;
+    padding: 60px 74px;
+  }
+}
+
+.page-catalog .contacts,
+.page-form .contacts {
+  background-color: $c-lightgray;
 }
 
 .page-catalog .contacts__info,
 .page-form .contacts__info {
-  margin: 0;
-  padding: 20px;
   background-color: $c-lightgray;
 
-  @media (min-width: $tablet-width) {
-    padding: 40px 70px;
+  @media (min-width: $desktop-width) {
+    background-color: $c-white;
   }
 }
 
@@ -40,7 +59,7 @@
 .contacts__text {
   align-content: space-between;
   width: 50%;
-  padding-top: 8px;
+  margin-top: 8px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -51,6 +70,10 @@
     width: 155px;
     text-align: right;
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -93,6 +116,10 @@
   @media (min-width: $tablet-width) {
     min-height: 398px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
 
 .contacts__embed-map {
@@ -106,32 +133,5 @@
   @media (min-width: $tablet-width) {
     height: 398px;
     margin-top: -399px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer__contacts {
-    position: relative;
-  }
-
-  .contacts__info {
-    position: absolute;
-    top: 92px;
-    left: 110px;
-    width: 430px;
-    padding: 60px 74px;
-  }
-
-  .page-catalog .contacts__info,
-  .page-form .contacts__info {
-    background-color: $c-white;
-  }
-
-  .contacts__text {
-    text-align: left;
-  }
-
-  .contacts__map {
-    height: 400px;
   }
 }

@@ -1,23 +1,59 @@
 .example__slider {
   margin: 0;
   min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 650px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .example__item--before {
   display: block;
   margin-left: -20px;
   min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    clip: rect(auto, 345px, auto, auto);
+    z-index: 2;
+  }
 }
 
 .example__item--after {
   display: none;
   margin-left: -20px;
   min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    clip: rect(auto, auto, auto, 345px);
+    z-index: 2;
+  }
 }
 
 .slider__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 708px;
+    min-height: 500px;
+    margin: 74px auto 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 25px;
+  }
 }
 
 .slider__toggles {
@@ -28,6 +64,15 @@
   padding-right: 40px;
   padding-bottom: 35px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .slider__toggle {
@@ -38,10 +83,26 @@
   background: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    font-size: 20px;
+  }
 }
 
 .slider__toggle--before {
   margin-left: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    margin-right: 20px;
+    padding-left: 0;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
+  }
 }
 
 .example__scale {
@@ -52,70 +113,8 @@
   border: 1px solid $c-mouse-gray;
   border-radius: 50px;
   background: #ffffff;
-}
 
-.example__bar {
-  position: relative;
-  top: 3px;
-  left: 5px;
-  width: 35px;
-  height: 6px;
-  background-color: $c-green;
-  border-radius: 10px;
-}
-
-@media (min-width: $tablet-width) {
-  .example__list {
-    position: relative;
-    width: 708px;
-    min-height: 500px;
-    margin: 68px auto 12px;
-  }
-
-  .example__item {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .example__item--before {
-    clip: rect(auto, 345px, auto, auto);
-    z-index: 2;
-  }
-
-  .example__item--after {
-    display: block;
-    clip: rect(auto, auto, auto, 345px);
-    z-index: 2;
-  }
-
-  .slider__toggles {
-    padding-top: 0;
-    z-index: 2;
-  }
-
-  .slider__toggle {
-    width: 45px;
-    font-size: 20px;
-  }
-
-  .slider__toggle--before {
-    margin-left: 50px;
-    margin-right: 20px;
-    padding-left: 0;
-    z-index: 2;
-  }
-
-  .slider__toggle--after {
-    margin-right: 60px;
-    margin-left: 10px;
-    z-index: 2;
-  }
-
-  .example__scale {
+  @media (min-width: $tablet-width) {
     position: relative;
     top: 3px;
     justify-content: center;
@@ -126,7 +125,21 @@
     z-index: 2;
   }
 
-  .example__bar {
+  @media (min-width: $desktop-width) {
+    width: 425px;
+  }
+}
+
+.example__bar {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background-color: $c-green;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: -12px;
     left: 50%;
@@ -140,35 +153,25 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .example__slider {
-    min-width: 650px;
-    margin: 0;
-    padding: 0;
+.example__item {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.slider__toggle--after {
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    margin-left: 10px;
+    z-index: 2;
   }
 
-  .slider__list {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin-bottom: 25px;
-  }
-
-  .example__item--before {
-    height: 500px;
-  }
-
-  .slider__toggles {
-    width: 570px;
-  }
-
-  .example__scale {
-    width: 425px;
-  }
-
-  .slider__toggle--after {
+  @media (min-width: $desktop-width) {
     margin-right: 0;
   }
 }

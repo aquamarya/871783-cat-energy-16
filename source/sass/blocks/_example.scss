@@ -177,15 +177,8 @@
 
   .example__field {
     margin-top: 7px;
-    font-size: 12px;
-  }
-
-  .example__weight .example__field {
-    left: 65px;
-  }
-
-  .example__period .example__field {
-    right: 69.5%;
+    font-size: 14px;
+    background: $c-white;
   }
 
   .example__calculation .example__total {
