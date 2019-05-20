@@ -2,10 +2,14 @@
   margin-top: -20px;
   background-color: $c-lightgray;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .footer__logo-image {
-  margin-top: 37px;
+  margin-top: 34px;
   margin-bottom: 28px;
   margin-left: 76px;
   width: 127px;
@@ -20,20 +24,42 @@
   &:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
 }
 
 .copyright {
   margin: 0;
-  padding: 25px 0 35px 0;
+  padding: 20px 0 40px 0;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .copyright__link {
-  position: relative;
-  width: 100%;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $c-darkgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link--title {
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    margin: 0;
+  }
 }
 
 .copyright__link--image {
@@ -43,31 +69,39 @@
   display: inline-block;
   width: 28px;
   height: 36px;
-  background-image: url("../../img/htmlacademy.svg");
-  background-repeat: no-repeat;
+
   fill: $c-darkgray;
+
+  @media (min-width: $tablet-width) {
+    right: -50px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .footer {
-    margin-top: 0;
+.copyright__logo-icon-academy {
+  margin-left: auto;
+
+  fill: #666666;
+
+  &:hover {
+    fill: $c-green;
   }
 
-  .footer__wrapper {
+  &:active {
+    fill: $c-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     padding: 30px;
   }
 
-  .footer__logo-image {
-    margin-top: 32px;
-    margin-left: 0;
-  }
-
-  .copyright {
-    margin-left: 20px;
-  }
-
-  .copyright__link--image {
-    right: -50px;
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
   }
 }

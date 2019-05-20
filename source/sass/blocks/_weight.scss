@@ -1,5 +1,6 @@
 .weight {
   padding: 0;
+
   box-sizing: border-box;
 
   &__item--lose {
@@ -37,7 +38,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 4px;
     left: 2px;
     width: 50px;
     height: 50px;
@@ -114,7 +115,7 @@
     &__item--lose,
     &__item--gain {
       padding: 52px;
-      padding-bottom: 62px;
+      padding-bottom: 61px;
     }
 
     &__item--lose {
@@ -124,7 +125,7 @@
 
   .weight__title {
     width: 375px;
-    padding: 22px 0 10px 0;
+    padding: 23px 0 10px 0;
     font-size: 36px;
     line-height: 36px;
 
@@ -143,8 +144,8 @@
   }
 
   .weight__item--lose .weight__title::after {
-    top: 27px;
-    left: 425px;
+    top: 26px;
+    left: 424px;
     width: 144px;
     height: 196px;
   }
@@ -187,6 +188,7 @@
   .weight {
     max-width: 1440px;
     display: flex;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -202,6 +204,7 @@
   }
 
   .weight__title {
+    width: 325px;
     padding-top: 29px;
     padding-bottom: 32px;
     padding-left: 165px;

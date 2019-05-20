@@ -26,15 +26,40 @@
     height: 2px;
     background: $c-mouse-gray;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    width: 412px;
+    margin: 34px 0 50px;
+    padding-left: 27px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    margin: 46px 400px 34px 395px;
+  }
 }
 
 .social__list {
   display: flex;
   justify-content: space-between;
-  width: 124px;
+  width: 126px;
   margin: 0 auto;
   padding: 20px 20px 22px 12px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    padding: 0;
+    margin: 0;
+    margin-top: -8px;
+  }
 }
 
 .social__item {
@@ -47,55 +72,50 @@
   opacity: 0.6;
 }
 
-.social__link--vkontakte {
-  width: 24px;
-  height: 12px;
-  background: url("../../img/icon-vk-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-.social__link--instagram {
-  width: 16px;
-  height: 16px;
-  background: url("../../img/icon-insta-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-.social__link--facebook {
-  width: 10px;
-  height: 19px;
-  background: url("../../img/icon-fb-mobile.svg");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: $tablet-width) {
-  .footer__social {
-    width: 162px;
-    margin: 34px 100px 34px 135px;
-
-    &::before,
-    &::after {
-      display: none;
-    }
+.social__image-vk {
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 18px;
+    margin-bottom: 4px;
   }
 
-  .social {
-    border: none;
-  }
-
-  .social__list {
-    padding: 0;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .footer__social {
-    width: 132px;
-    margin: 46px 400px 34px 395px;
+.social__image-insta {
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
   }
 
-  .copyright {
-    margin-left: 0;
-    margin-top: 20px;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image-fb {
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 28px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__image-vk,
+.social__image-insta,
+.social__image-fb {
+  fill: #666666;
+
+  &:hover {
+    fill: $c-green;
+  }
+
+  &:active {
+    fill: $c-green;
   }
 }

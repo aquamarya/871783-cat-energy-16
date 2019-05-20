@@ -31,35 +31,27 @@
   font-style: normal;
 }
 
-.example__calculation tbody {
+.example__calculation-list {
   display: flex;
-  flex-wrap: wrap;
-
-  border-collapse: collapse;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.example__calculation tr {
+.example__calculation-item {
+  display: flex;
+  flex-direction: column;
   width: 116px;
-  padding: 10px 2px;
+  padding: 12px 2px;
 }
 
 .example__weight {
-  position: relative;
-  margin-right: 16px;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
 }
 
 .example__period {
-  position: relative;
-  margin-left: 16px;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
-}
-
-.example__calculation td {
-  display: block;
-  width: auto;
 }
 
 .example__value {
@@ -73,9 +65,8 @@
 }
 
 .example__weight .example__field {
-  position: absolute;
-  left: 40px;
-  padding: 0 15px;
+  margin: 0 auto -30px;
+  padding: 2px 12px;
 }
 
 .example__period .example__value {
@@ -84,9 +75,8 @@
 }
 
 .example__period .example__field {
-  position: absolute;
-  right: 40px;
-  padding: 0 15px;
+  margin: 0 auto -30px;
+  padding: 2px 12px;
 }
 
 .example__field {
@@ -97,10 +87,8 @@
   text-align: center;
 }
 
-.example__calculation tr.example__total {
-  position: relative;
-
-  display: flex;
+.example__calculation .example__total {
+  flex-direction: row;
   justify-content: center;
   width: 100%;
   margin-top: 22px;
@@ -119,7 +107,7 @@
 
 .example__value--total {
   width: 170px;
-  justify-content: end;
+  text-align: end;
 }
 
 .example__field--total {
@@ -130,44 +118,47 @@
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-start;
     height: 1050px;
-    background: linear-gradient(#ffffff 56%, #f2f2f2 44%);
+    background: $c-white;
     margin: 0;
     padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 46%;
+      background: linear-gradient(to right, $c-lightgray 50%, #eaeaea 50%);
+    }
   }
 
   .example__title {
     margin-top: 11px;
-    margin-bottom: 0;
-    padding: 30px;
+    padding-bottom: 30px;
     padding-top: 0;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__description {
-    padding: 30px;
-    padding-top: 18px;
+    padding: 13px 0 25px 0;
     width: 708px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .example__calculation tbody {
+  .example__calculation {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 708px;
-    padding: 30px;
+    padding-bottom: 30px;
     padding-top: 0;
   }
 
-  .example__calculation tr {
+  .example__calculation-item {
     padding: 14px 22px;
   }
 
@@ -197,10 +188,10 @@
     right: 69.5%;
   }
 
-  .example__calculation tr.example__total {
+  .example__calculation .example__total {
     justify-content: flex-end;
     width: 190px;
-
+    margin-top: -1px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -232,13 +223,13 @@
     padding: 40px;
   }
 
-  .example__calculation tbody {
+  .example__calculation {
     flex-wrap: wrap;
     width: 375px;
     padding-left: 40px;
   }
 
-  .example__calculation tr {
+  .example__calculation-item {
     padding: 15px 22px;
   }
 
@@ -265,7 +256,7 @@
     padding: 0 5px;
   }
 
-  .example__calculation tr.example__total {
+  .example__calculation .example__total {
     justify-content: space-between;
     width: 325px;
     margin-right: 30px;
