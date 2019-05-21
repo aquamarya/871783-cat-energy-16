@@ -16,7 +16,7 @@
   @media (min-width: $tablet-width) {
     width: 626px;
     justify-content: space-between;
-    padding: 58px 30px 53px;
+    padding: 58px 40px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,6 +74,13 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.contacts__address {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-bottom: 20px;
   }
 }
 

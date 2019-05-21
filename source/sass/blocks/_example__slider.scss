@@ -116,11 +116,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    top: 3px;
-    justify-content: center;
-    width: 430px;
+    right: 30px;
+    width: 425px;
     height: 4px;
-    padding: 0 5px;
+    padding: 0;
     background-color: #dcdcdc;
     z-index: 2;
   }
@@ -141,8 +140,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -12px;
-    left: 50%;
+    top: -15px;
+    left: 47%;
     align-self: center;
     width: 8px;
     height: 8px;

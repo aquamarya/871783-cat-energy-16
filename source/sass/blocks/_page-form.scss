@@ -94,12 +94,6 @@
   box-sizing: border-box;
 }
 
-.user-info,
-.comment,
-.filter-extra {
-  position: relative;
-}
-
 .user-info__title,
 .comment__title,
 .filter-extra__title {
@@ -156,6 +150,7 @@
 }
 
 .comment__title {
+  display: inline-block;
   margin-top: 18px;
   margin-bottom: 20px;
 }
@@ -169,6 +164,7 @@
 }
 
 .user-info__title {
+  display: inline-block;
   padding-top: 3px;
 }
 
@@ -191,7 +187,7 @@
   }
 
   > input {
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
     border: 1px solid #e6e6e6;
     margin-top: 8px;
@@ -201,6 +197,7 @@
 }
 
 .filter-extra__title {
+  display: inline-block;
   margin-top: 26px;
   margin-bottom: 32px;
 }
