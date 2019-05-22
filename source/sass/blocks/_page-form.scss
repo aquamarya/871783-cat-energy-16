@@ -192,7 +192,7 @@
 }
 
 .program-form__legend {
-  padding-left: 50px;
+  padding-left: 62px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -234,14 +234,14 @@
 
 .filter-extra__title {
   display: inline-block;
-  margin-top: 26px;
-  margin-bottom: 32px;
+  margin-top: 28px;
+  margin-bottom: 20px;
 }
 
 .filter-extra::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 0;
   z-index: 1;
   width: 163px;
@@ -252,7 +252,7 @@
 .filter-extra::after {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 42px;
   right: -20px;
   z-index: -1;
   width: 100%;
@@ -325,14 +325,14 @@
 
 .filter-extra__list {
   padding: 0;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   list-style: none;
 }
 
 .filter-extra__item {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .filter-extra__input--checkbox {

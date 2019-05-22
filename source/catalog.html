@@ -43,8 +43,8 @@
     </header>
 
     <main class="main">
-      <div class="main__container container">
-        <div class="main__catalog">
+      <div class="main__catalog">
+        <div class="container">
           <h2 class="catalog__title">Каталог продукции</h2>
           <section class="catalog">
             <div class="catalog__item">
@@ -370,71 +370,75 @@
               </div>
             </div>
             <div class="catalog__item catalog-to-all">
-              <h3 class="catalog-to-all__title">Показать еще 100500 товаров</h3>
-              <span class="catalog-to-all__text">На самом деле вкусов гораздо больше!</span>
+              <div  class="catalog-to-all__wrapper">
+                <h3 class="catalog-to-all__title">Показать еще 100500 товаров</h3>
+                <span class="catalog-to-all__text">На самом деле вкусов гораздо больше!</span>
+              </div>
               <a class="button catalog-to-all__button" href="#">Показать все</a>
             </div>
           </section>
         </div>
         <section class="catalog-extra">
-          <h2 class="catalog-extra__title">Дополнительные товары</h2>
-          <div class="catalog-extra__wrapper">
-            <div class="catalog-extra__items">
-              <div class="catalog-extra__item">
-                <h3 class="catalog-extra__item-title">Сахарозаменитель</h3>
-                <table class="catalog-extra__list">
-                  <tr>
-                    <td class="catalog-extra__field">
-                      1 упаковка (100 г)
-                    </td>
-                    <td class="catalog-extra__value">
-                      200 Р.
-                    </td>
-                  </tr>
-                </table>
-                <a class="button catalog-extra__order" href="#">Заказать</a>
-              </div>
-              <div class="catalog-extra__item">
-                <h3 class="catalog-extra__item-title">Питьевая вода</h3>
-                <table class="catalog-extra__list">
-                  <tr>
-                    <td class="catalog-extra__field">
-                      5 литров
-                    </td>
-                    <td class="catalog-extra__value">
-                      50 Р.
-                    </td>
-                  </tr>
-                </table>
-                <a class="button catalog-extra__order" href="#">Заказать</a>
-              </div>
-              <div class="catalog-extra__item">
-                <h3 class="catalog-extra__item-title">Молоко</h3>
-                <table class="catalog-extra__list">
-                  <tr>
-                    <td class="catalog-extra__field">
-                      1 литр
-                    </td>
-                    <td class="catalog-extra__value">
-                      100 Р.
-                    </td>
-                  </tr>
-                </table>
-                <a class="button catalog-extra__order" href="#">Заказать</a>
-              </div>
-              <div class="catalog-extra__item">
-                <h3 class="catalog-extra__item-title">Витамины</h3>
-                <table class="catalog-extra__list">
-                  <tr>
-                    <td class="catalog-extra__field">
-                      1 упаковка (30 г)
-                    </td>
-                    <td class="catalog-extra__value">
-                      300 Р.
-                    </td>
-                  </tr>
-                </table>
-                <a class="button catalog-extra__order" href="#">Заказать</a>
+          <div class="container">
+            <h2 class="catalog-extra__title">Дополнительные товары</h2>
+            <div class="catalog-extra__wrapper">
+              <div class="catalog-extra__items">
+                <div class="catalog-extra__item">
+                  <h3 class="catalog-extra__item-title">Сахарозаменитель</h3>
+                  <table class="catalog-extra__list">
+                    <tr>
+                      <td class="catalog-extra__field">
+                        1 упаковка (100 г)
+                      </td>
+                      <td class="catalog-extra__value">
+                        200 Р.
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="button catalog-extra__order" href="#">Заказать</a>
+                </div>
+                <div class="catalog-extra__item">
+                  <h3 class="catalog-extra__item-title">Питьевая вода</h3>
+                  <table class="catalog-extra__list">
+                    <tr>
+                      <td class="catalog-extra__field">
+                        5 литров
+                      </td>
+                      <td class="catalog-extra__value">
+                        50 Р.
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="button catalog-extra__order" href="#">Заказать</a>
+                </div>
+                <div class="catalog-extra__item">
+                  <h3 class="catalog-extra__item-title">Молоко</h3>
+                  <table class="catalog-extra__list">
+                    <tr>
+                      <td class="catalog-extra__field">
+                        1 литр
+                      </td>
+                      <td class="catalog-extra__value">
+                        100 Р.
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="button catalog-extra__order" href="#">Заказать</a>
+                </div>
+                <div class="catalog-extra__item">
+                  <h3 class="catalog-extra__item-title">Витамины</h3>
+                  <table class="catalog-extra__list">
+                    <tr>
+                      <td class="catalog-extra__field">
+                        1 упаковка (30 г)
+                      </td>
+                      <td class="catalog-extra__value">
+                        300 Р.
+                      </td>
+                    </tr>
+                  </table>
+                  <a class="button catalog-extra__order" href="#">Заказать</a>
+                </div>
               </div>
             </div>
             <div class="catalog-offer">
@@ -486,7 +490,7 @@
               <a class="social__link social__link--vkontakte" href="#">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="social__image-vk" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -494,7 +498,7 @@
               <a class="social__link social__link--instagram" href="#">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="social__image-insta" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -502,7 +506,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="social__image-fb" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -511,7 +515,7 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
             <svg class="copyright__logo-icon-academy" width="40" height="40">
-              <use xlink:href="img/sprite.svg#logo-icon-academy"></use>
+              <use xlink:href="#logo-icon-academy"></use>
             </svg>
           </a>
         </div>

@@ -189,8 +189,6 @@
     max-width: 1440px;
     display: flex;
     padding-top: 0;
-    padding-left: 40px;
-    padding-right: 40px;
 
     &__item--lose,
     &__item--gain {
@@ -205,13 +203,13 @@
 
   .weight__title {
     width: 325px;
-    padding-top: 29px;
-    padding-bottom: 32px;
+    padding-top: 25px;
+    padding-bottom: 34px;
     padding-left: 165px;
     margin-bottom: 40px;
 
     &::before {
-      top: 0;
+      top: -3px;
       left: 0;
       width: 100px;
       height: 100px;
@@ -219,14 +217,14 @@
   }
 
   .weight__item--lose .weight__title::after {
-    top: -7px;
+    top: -10px;
     left: 15px;
     width: 70px;
     height: 100px;
   }
 
   .weight__item--gain .weight__title::after {
-    top: 20px;
+    top: 17px;
     left: -18px;
     width: 140px;
     height: 60px;

@@ -15,14 +15,16 @@
   top: 23px;
   left: 0;
   z-index: 1;
-  width: 246px;
+  width: 268px;
   height: 3px;
 
   background-color: $c-white;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 29px;
+    left: 30px;
     width: 410px;
+    height: 5px;
   }
 }
 
@@ -39,7 +41,13 @@
 
   @media (min-width: $tablet-width) {
     top: 30px;
+    left: 0;
+    right: 0;
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
@@ -60,11 +68,6 @@
     font-size: 36px;
     line-height: 36px;
     border-bottom: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 40px;
-    margin-right: 40px;
   }
 }
 
@@ -219,8 +222,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
   }
 }
 
