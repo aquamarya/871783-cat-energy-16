@@ -297,21 +297,22 @@
 @media (min-width: $desktop-width) {
   .main__catalog {
     width: 1300px;
-    margin-left: 40px;
-    margin-right: 40px;
   }
 
   .catalog__title {
-    margin-bottom: 65px;
+    margin-bottom: 0;
     margin-top: 30px;
+    padding-bottom: 20px;
   }
 
   .catalog__item--wrapper {
+    padding-top: 110px;
     padding-left: 0;
   }
 
   .catalog__item-image {
-    margin: -150px 17px 0;
+    width: 245px;
+    margin: -195px 17px 0;
   }
 
   .catalog__item {
