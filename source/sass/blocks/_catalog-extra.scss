@@ -176,6 +176,12 @@
   @media (min-width: $tablet-width) {
     height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 292px;
+    margin: 0;
+  }
 }
 
 .catalog-offer__description {
@@ -196,6 +202,13 @@
     margin-right: 115px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -110%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 
 .catalog-offer__description::before {
@@ -215,13 +228,19 @@
     top: 174px;
     left: -330px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 35px;
+    left: 55px;
+  }
 }
 
 
 .catalog-extra__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: flex-start;
   }
 }
 
