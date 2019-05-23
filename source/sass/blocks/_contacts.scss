@@ -22,9 +22,10 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 92px;
-    left: 110px;
+    left: 40px;
     width: 430px;
-    padding: 60px 74px;
+    padding: 58px 74px;
+    z-index: 1;
   }
 }
 
@@ -103,10 +104,10 @@
     min-height: 398px;
 
     &::before {
-      top: 36%;
-      left: 42%;
-      width: 120px;
-      height: 130px;
+      top: 38%;
+      left: 71%;
+      width: 125px;
+      height: 140px;
     }
   }
 }
@@ -140,5 +141,9 @@
   @media (min-width: $tablet-width) {
     height: 398px;
     margin-top: -399px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -402 px;
   }
 }
