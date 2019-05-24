@@ -68,7 +68,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    width: 570px;
+    padding: 0;
     z-index: 2;
   }
 
@@ -87,7 +88,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 45px;
+    width: auto;
     font-size: 20px;
   }
 }
@@ -96,9 +97,12 @@
   margin-left: -3px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
-    margin-right: 20px;
-    padding-left: 0;
+    position: relative;
+    top: -5px;
+    margin-left: 55px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted $c-lightgray;
     z-index: 2;
   }
 
@@ -118,7 +122,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    right: 30px;
+    right: -25px;
     width: 425px;
     height: 4px;
     padding: 0;
@@ -173,8 +177,12 @@
 
 .slider__toggle--after {
   @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    margin-left: 10px;
+    position: relative;
+    top: -5px;
+    margin-left: 45px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted $c-lightgray;
     z-index: 2;
   }
 
