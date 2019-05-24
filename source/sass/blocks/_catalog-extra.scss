@@ -70,8 +70,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
-    padding-right: 35px;
-    padding-left: 35px;
+    margin-right: 37px;
+    margin-left: 37px;
     font-size: 36px;
     line-height: 36px;
     border-bottom: none;
@@ -170,7 +170,11 @@
 .catalog-extra__field {
   width: 140px;
   padding-left: 0;
-  text-align: right;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 
   @media (min-width: $desktop-width) {
     text-align: left;
@@ -184,7 +188,7 @@
   text-align: right;
 
   @media (min-width: $tablet-width) {
-    width: 145px;
+    width: 100px;
   }
 }
 
