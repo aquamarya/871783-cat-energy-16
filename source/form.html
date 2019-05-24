@@ -48,58 +48,62 @@
         <h2 class="program__title">Подбор программы</h2>
         <p class="program__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
         <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="cat-info">
-            <h3 class="visually-hidden">Информация о коте</h3>
-            <ul class="cat-info__list">
-              <li class="cat-info__item">
-                <label for="cat-name">Имя:*</label>
-                <input id="cat-name" class="cat-name__icon" type="text" name="cat-name" placeholder="Барсик">
-              </li>
-              <li class="cat-info__item">
-                <label for="cat-weight">Вес (кг):*</label>
-                <input id="cat-weight" class="cat-weight__icon" type="number" name="cat-weight" placeholder="7">
-              </li>
-              <li class="cat-info__item">
-                <label for="cat-age">Возраст (лет):</label>
-                <input id="cat-age" class="cat-age__icon" type="number" name="cat-age" placeholder="7">
-              </li>
-            </ul>
-          </div>
-          <div class="program__filter">
-            <h3 class="visually-hidden">Фильтр подбора программы</h3>
-            <ul class="filter-options">
-              <li class="filter-option filter-option__losing-weight">
-                <input id="losing-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="losing-weight" checked="">
-                <label for="losing-weight" class="filter-option__label--radio">Похудение</label>
-              </li>
-              <li class="filter-option filter-option__gain-weight">
-                <input id="gain-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="gain-weight">
-                <label for="gain-weight" class="filter-option__label--radio">Набор массы</label>
-              </li>
-              <li class="filter-option filter-option__need-advice">
-                <input id="need-advice" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="need-advice">
-                <label for="need-advice" class="filter-option__label--radio">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+          <div class="program__wrapper">
+            <div class="cat-info">
+              <h3 class="visually-hidden">Информация о коте</h3>
+              <ul class="cat-info__list">
+                <li class="cat-info__item">
+                  <label for="cat-name">Имя:*</label>
+                  <input id="cat-name" class="cat-name__icon" type="text" name="cat-name" placeholder="Барсик">
+                </li>
+                <li class="cat-info__item">
+                  <label for="cat-weight">Вес (кг):*</label>
+                  <input id="cat-weight" class="cat-weight__icon" type="number" name="cat-weight" placeholder="7">
+                </li>
+                <li class="cat-info__item">
+                  <label for="cat-age">Возраст (лет):</label>
+                  <input id="cat-age" class="cat-age__icon" type="number" name="cat-age" placeholder="7">
+                </li>
+              </ul>
+            </div>
+            <div class="program__filter">
+              <h3 class="visually-hidden">Фильтр подбора программы</h3>
+              <ul class="filter-options">
+                <li class="filter-option filter-option__losing-weight">
+                  <input id="losing-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="losing-weight" checked="">
+                  <label for="losing-weight" class="filter-option__label--radio">Похудение</label>
+                </li>
+                <li class="filter-option filter-option__gain-weight">
+                  <input id="gain-weight" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="gain-weight">
+                  <label for="gain-weight" class="filter-option__label--radio">Набор массы</label>
+                </li>
+                <li class="filter-option filter-option__need-advice">
+                  <input id="need-advice" class="filter-option__input filter-option__input--radio" type="radio" name="program-choice" value="need-advice">
+                  <label for="need-advice" class="filter-option__label--radio">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="user-info">
             <h3 class="user-info__title">Контактные данные (владельца кота)</h3>
-            <div class="user-info__item">
-            <label for="user__email">E-mail:*</label>
-            <div class="user-info__item-inner">
-              <input id="user__email" class="user__input" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
-              <svg class="user__email--icon" width="18" height="20">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </div>
-            </div>
-            <div class="user-info__item">
-              <label for="user__phone">Телефон:*</label>
-              <div class="user-info__item-inner">
-                <input id="user__phone" class="user__input" type="number" name="user__phone" value="" placeholder="8 (960) 900-60-90">
-                <svg class="user__phone--icon" width="21" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
+            <div class="user-info__wrapper">
+              <div class="user-info__item">
+                <label for="user__email">E-mail:*</label>
+                <div class="user-info__item-inner">
+                  <input id="user__email" class="user__input" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
+                  <svg class="user__email--icon" width="18" height="20">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="user-info__item">
+                <label for="user__phone">Телефон:*</label>
+                <div class="user-info__item-inner">
+                  <input id="user__phone" class="user__input" type="number" name="user__phone" value="" placeholder="8 (960) 900-60-90">
+                  <svg class="user__phone--icon" width="21" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>

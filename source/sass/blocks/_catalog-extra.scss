@@ -13,7 +13,7 @@
 .catalog-extra::before {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 21px;
   left: 0;
   z-index: 1;
   width: 268px;
@@ -22,7 +22,7 @@
   background-color: $c-white;
 
   @media (min-width: $tablet-width) {
-    top: 29px;
+    top: 28px;
     left: 30px;
     width: 410px;
     height: 5px;
@@ -46,7 +46,7 @@
   background-color: $c-green;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 28px;
     left: 0;
     right: 0;
     width: 768px;
@@ -72,13 +72,14 @@
     margin-bottom: 47px;
     margin-right: 37px;
     margin-left: 37px;
+    padding-top: 6px;
     font-size: 36px;
     line-height: 36px;
     border-bottom: none;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -222,7 +223,7 @@
 
   @media (min-width: $tablet-width) {
     height: 200px;
-    margin: 70px 0 60px;
+    margin: 70px 0 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -246,7 +247,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: -18%;
+    margin-top: -18.5%;
     margin-right: 115px;
     padding-top: 0;
     text-align: left;

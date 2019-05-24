@@ -266,7 +266,7 @@
 .catalog-to-all__wrapper {
   @media (min-width: $tablet-width) {
     height: 428px;
-    border: 1px solid red
+    border: 1px solid $c-lightgray;
   }
 }
 
@@ -299,7 +299,7 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
-    top: 140px;
+    top: 165px;
     width: 60px;
     height: 60px;
     background-image: url("../../img/icon-plus.svg");
@@ -315,7 +315,7 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin: 26px auto;
+    margin: 163px auto 25px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -329,7 +329,7 @@
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     font-size: 16px;
     line-height: 20px;
   }
