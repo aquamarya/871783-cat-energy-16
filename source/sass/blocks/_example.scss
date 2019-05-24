@@ -7,6 +7,32 @@
   border: none;
   background-position: 0 0;
   background-color: $c-lightgray;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    height: 1038px;
+    background: $c-white;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 45%;
+      background: linear-gradient(to right, $c-lightgray 50%, #eaeaea 50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 650px;
+
+    &::after {
+      height: 75%;
+    }
+  }
 }
 
 .example__title {
@@ -17,9 +43,24 @@
 
   font-size: 36px;
   line-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    padding: 30px 0;
+  }
 }
 
 .example__description {
+  display: block;
+  z-index: 5;
   width: 280px;
   margin-bottom: 25px;
   padding: 0;
@@ -29,6 +70,40 @@
   line-height: 18px;
   color: $c-darkgray;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 0 25px 0;
+    width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 420px;
+    margin-top: 77px;
+    padding: 40px;
+    padding-left: 0;
+    z-index: 1;
+  }
+}
+
+.example__calculation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 708px;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    flex-wrap: wrap;
+    width: 375px;
+    z-index: 1;
+  }
 }
 
 .example__calculation-list {
@@ -42,16 +117,42 @@
   flex-direction: column;
   width: 116px;
   padding: 12px 2px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 22px;
+  }
 }
 
 .example__weight {
   border: 1px solid #cdcdcd;
   border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 20px;
+  }
 }
 
 .example__period {
   border: 1px solid #cdcdcd;
   border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+    margin-right: 0;
+  }
 }
 
 .example__value {
@@ -59,24 +160,46 @@
   text-transform: uppercase;
 }
 
-.example__weight .example__value {
-  margin-bottom: 5px;
-  font-size: 24px;
-}
-
-.example__weight .example__field {
-  margin: 0 auto -30px;
-  padding: 2px 12px;
-}
-
+.example__weight .example__value,
 .example__period .example__value {
   margin-bottom: 5px;
   font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 30px;
+  }
 }
 
+.example__weight .example__field,
 .example__period .example__field {
   margin: 0 auto -30px;
   padding: 2px 12px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: -8px;
+    width: 130px;
+    padding: 10px 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
+}
+
+.example__weight .example__field {
+  @media (min-width: $desktop-width) {
+    width: 110px;
+    left: 0;
+  }
+}
+
+.example__period .example__field {
+  @media (min-width: $desktop-width) {
+    left: -8px;
+  }
 }
 
 .example__field {
@@ -85,15 +208,44 @@
   color: #444444;
   background-color: $c-lightgray;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    font-size: 14px;
+    background: $c-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $c-lightgray;
+  }
 }
 
 .example__calculation .example__total {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   margin-top: 22px;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 190px;
+    margin-top: -1px;
+    margin-left: auto;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 325px;
+    margin-right: 30px;
+    margin-left: 0;
+    padding: 50px 0;
+  }
 }
 
 .example__value--total,
@@ -103,164 +255,42 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .example__value--total {
   width: 170px;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    margin-top: 7px;
+    margin-left: -10px;
+    background-color: $c-lightgray;
+  }
 }
 
 .example__field--total {
   width: 110px;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: auto;
+    text-align: end;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .example {
-    position: relative;
-    height: 1050px;
-    background: $c-white;
-    margin: 0;
-    padding: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 46%;
-      background: linear-gradient(to right, $c-lightgray 50%, #eaeaea 50%);
-    }
-  }
-
-  .example__title {
-    margin-top: 11px;
-    padding-bottom: 30px;
-    padding-top: 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .example__description {
-    padding: 13px 0 25px 0;
-    width: 708px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .example__calculation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 708px;
-    padding-bottom: 30px;
-    padding-top: 0;
-  }
-
-  .example__calculation-item {
-    padding: 14px 22px;
-  }
-
-  .example__weight {
-    margin-right: 20px;
-  }
-
-  .example__period {
-    margin-left: 20px;
-  }
-
-  .example__weight .example__value,
-  .example__period .example__value {
-    font-size: 30px;
-  }
-
-  .example__field {
-    margin-top: 7px;
-    font-size: 12px;
-  }
-
-  .example__weight .example__field {
-    left: 65px;
-  }
-
-  .example__period .example__field {
-    right: 69.5%;
-  }
-
-  .example__calculation .example__total {
-    justify-content: flex-end;
-    width: 190px;
-    margin-top: -1px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .example__value--total,
-  .example__field--total {
-    font-size: 20px;
-  }
-
-  .example__field br {
+.example__field br {
+  @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example {
-    height: 650px;
-    background: linear-gradient(#ffffff 26%, #f2f2f2 26%);
-  }
-
-  .example__title {
-    margin-top: 22px;
-    padding: 30px 40px;
-  }
-
-  .example__description {
-    width: 440px;
-    margin-top: 77px;
-    padding: 40px;
-  }
-
-  .example__calculation {
-    flex-wrap: wrap;
-    width: 375px;
-    padding-left: 40px;
-  }
-
-  .example__calculation-item {
-    padding: 15px 22px;
-  }
-
-  .example__weight {
-    margin-right: 20px;
-  }
-
-  .example__period {
-    margin-left: 20px;
-  }
-
-  .example__field {
-    margin-top: 7px;
-    font-size: 14px;
-  }
-
-  .example__weight .example__field {
-    left: 140px;
-    padding: 0 5px;
-  }
-
-  .example__period .example__field {
-    right: 68%;
-    padding: 0 5px;
-  }
-
-  .example__calculation .example__total {
-    justify-content: space-between;
-    width: 325px;
-    margin-right: 30px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
