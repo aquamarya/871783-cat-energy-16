@@ -32,7 +32,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: -150px;
-    max-width: 100%;
+    width: 100%;
     margin: 0 0 -75px;
     padding-bottom: 0;
 
@@ -116,6 +116,7 @@
 }
 
 .start-program__button {
+  content: "";
   position: absolute;
   bottom: -175px;
   font-size: 14px;
@@ -153,7 +154,8 @@
     width: 545px;
     height: auto;
     z-index: 0;
-    transform: translateX(83%) translateY(-84%);
+    margin-left: 37%;
+    margin-top: -19.5%;
   }
 }
 

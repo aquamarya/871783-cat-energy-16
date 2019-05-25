@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="js/picturefill.min.js" as="script">
+    <link  href="fonts/oswaldmedium.woff2" rel="preload" as="font" crossorigin="anonymous">
+    <link  href="fonts/oswaldregular.woff2" rel="preload" as="font" crossorigin="anonymous">
   </head>
   <body>
 
@@ -22,6 +25,7 @@
         </picture>
       </a>
       <h1 class="visually-hidden">Cat Energy</h1>
+    <!-- Классы  main-nav--closed и main-nav--opened переключают состояния меню и внешний вид кнопки -->
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -160,7 +164,9 @@
             </ul>
             <ul class="example__toggles slider__toggles">
               <li>
-                <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+                <div class="example__toggle">
+                  <button class="slider__toggle slider__toggle--before" type="button">Было</button>
+                </div>
               </li>
               <li>
                 <div class="example__scale">
