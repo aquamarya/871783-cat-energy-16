@@ -3,11 +3,32 @@
   margin-bottom: 35px;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    counter-reset: item;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .info__title {
   font-size: 36px;
   line-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
 }
 
 .info__list {
@@ -17,6 +38,41 @@
   margin-left: 80px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    max-width: 1220px;
+    margin-top: 74px;
+  }
+}
+
+.info__list::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: -30px;
+    width: 768px;
+    height: 1px;
+
+    background-color: #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .info__description {
@@ -27,10 +83,37 @@
   line-height: 18px;
   color: $c-darkgray;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -70px;
+    left: 0;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-bottom: 0;
+  }
 }
 
 .info__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 35%;
+    margin-top: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 20%;
+    margin-right: 80px;
+  }
 }
 
 .info__item--advantage::before,
@@ -38,7 +121,6 @@
 .info__item--instruction::before,
 .info__item--result::before {
   content: "";
-
   position: absolute;
   top: 12px;
   left: -80px;
@@ -49,6 +131,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $c-green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -152px;
+    left: 0;
+  }
 }
 
 .info__item--advantage::before {
@@ -67,126 +156,35 @@
   background-image: url("../../img/advantage-clock@1x.png");
 }
 
-@media (min-width: $tablet-width) {
-  .info {
-    margin-bottom: 0;
-    counter-reset: item;
-  }
-
-  .info__title {
-    padding-top: 8px;
-    padding-bottom: 5px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .info__list {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 70px;
-    margin-bottom: 0;
-    margin-left: 0;
-  }
-
-  .info__list::after {
-    content: "";
-
-    position: absolute;
-    bottom: 32px;
-    left: -30px;
-
-    width: 768px;
-    height: 1px;
-
-    background-color: #e6e6e6;
-  }
-
-  .info__item {
-    flex-basis: 35%;
-    margin-top: 150px;
-  }
-
-  .info__item::after {
+.info__item::after {
+  @media (min-width: $tablet-width) {
     counter-increment: item;
     content: counter(item) "";
     position: absolute;
     top: -152px;
     left: 114px;
 
-    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-family: $f-base;
     font-size: 280px;
     line-height: 202px;
     font-weight: 400;
     color: $c-lightgray;
     z-index: -1;
   }
+}
 
-  .info__description {
-    position: relative;
-    top: -70px;
-    left: 0;
-    width: 250px;
-    margin-top: 30px;
-    margin-bottom: 65px;
-
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .info__item:nth-child(odd) {
+.info__item:nth-child(odd) {
+  @media (min-width: $tablet-width) {
     margin-right: 134px;
   }
 
-  .info__item--advantage::before,
-  .info__item--consist::before,
-  .info__item--instruction::before,
-  .info__item--result::before {
-    width: 80px;
-    height: 80px;
-    top: -152px;
-    left: 0;
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .info {
-    padding-top: 30px;
-  }
-
-  .info__list {
-    display: flex;
-    flex-direction: row;
-    max-width: 1220px;
-    margin-top: 74px;
-  }
-
-  .info__list::after {
-    display: none;
-  }
-
-  .info__item {
-    flex-basis: 20%;
-    margin-right: 80px;
-  }
-
-  .info__item:nth-child(odd) {
-    margin-right: 80px;
-  }
-
-  .info__item:nth-child(4n) {
+.info__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
     margin-right: 0;
-  }
-
-  .info__title {
-    padding-bottom: 0;
-  }
-
-  .info__description {
-    top: -73px;
-    width: 245px;
-    margin-bottom: 0;
   }
 }

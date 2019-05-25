@@ -20,6 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    content: "";
     position: absolute;
     top: 92px;
     left: 40px;
