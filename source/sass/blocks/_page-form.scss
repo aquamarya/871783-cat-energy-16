@@ -242,12 +242,12 @@
   @media (min-width: $tablet-width) {
     top: 60px;
     left: -70px;
-    width: 100vw;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     top: 90px;
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -286,11 +286,11 @@
   @media (min-width: $tablet-width) {
     top: 83px;
     left: -70px;
-    width: 100vw;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -422,11 +422,11 @@
   @media (min-width: $tablet-width) {
     top: 86px;
     left: -70px;
-    width: 100vw;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100vw;
+    width: 100%;
   }
 }
 
