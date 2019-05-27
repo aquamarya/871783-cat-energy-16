@@ -46,10 +46,12 @@
     </header>
 
     <main class="main">
-      <div class="main__container container">
+      <div class="container">
         <h2 class="program__title">Подбор программы</h2>
         <p class="program__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-        <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
+      </div>
+      <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
+        <div  class="container">
           <div class="program__wrapper">
             <div class="cat-info">
               <h3 class="visually-hidden">Информация о коте</h3>
@@ -86,7 +88,9 @@
               </ul>
             </div>
           </div>
-          <div class="user-info">
+        </div>
+        <div class="user-info">
+          <div class="container">
             <h3 class="user-info__title">Контактные данные (владельца кота)</h3>
             <div class="user-info__wrapper">
               <div class="user-info__item">
@@ -109,11 +113,17 @@
               </div>
             </div>
           </div>
-          <div class="comment">
+        </div>
+        <div class="comment">
+          <div class="container">
             <h3 class="comment__title">Комментарий</h3>
-            <textarea id="comment__text" name="comment__text" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comment__wrapper">
+              <textarea id="comment__text" name="comment__text" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </div>
-          <div class="filter-extra">
+        </div>
+        <div class="filter-extra">
+          <div class="container">
             <h3 class="filter-extra__title">Дополнительно</h3>
             <ul class="filter-extra__list">
               <li class="filter-extra__item">
@@ -133,15 +143,15 @@
                 <label for="vitamins" class="filter-extra__label">Витамины</label>
               </li>
             </ul>
+            <div class="filter-extra__request">
+              <button type="submit" class="button filter-extra__button">
+                Отправить заявку
+              </button>
+              <span class="program-form__legend program-form__legend--bottom"><sup>*</sup> — Обязательные поля</span>
+            </div>
           </div>
-          <div class="filter-extra__request">
-            <button type="submit" class="button filter-extra__button">
-              Отправить заявку
-            </button>
-            <span class="program-form__legend program-form__legend--bottom"><sup>*</sup> — Обязательные поля</span>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </main>
 
     <footer class="footer">

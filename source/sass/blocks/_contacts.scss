@@ -83,6 +83,7 @@
 .contacts__address {
   @media (min-width: $tablet-width) {
     display: inline-block;
+    vertical-align: middle;
     padding-bottom: 20px;
   }
 }

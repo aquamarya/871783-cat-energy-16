@@ -10,35 +10,10 @@
   }
 }
 
-.catalog-extra::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  left: 0;
-  z-index: 1;
-  width: 268px;
-  height: 4px;
-
-  background-color: $c-white;
-
-  @media (min-width: $tablet-width) {
-    top: 57px;
-    left: 30px;
-    width: 410px;
-    height: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 92px;
-    left: -40px;
-    width: 450px;
-  }
-}
-
 .catalog-extra::after {
   content: "";
   position: absolute;
-  top: 23px;
+  top: 43px;
   right: 0;
   z-index: -1;
   width: 100%;
@@ -55,7 +30,6 @@
 
   @media (min-width: $desktop-width) {
     top: 93px;
-    right: 0;
   }
 }
 
@@ -63,18 +37,24 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding: 8px 20px 34px;
-  margin: 0 auto;
+  width: 230px;
+  padding: 28px 20px 34px;
+  margin: 0 auto 0 -20px;
 
   font-size: 24px;
   line-height: 24px;
   z-index: 2;
+  background-color: #ffffff;
+  background-position: 0 0;
+  background-size: auto;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 340px;
     margin-bottom: 47px;
+    margin-left: 0;
     padding-top: 36px;
-    padding-left: 67px;
+    padding-left: 37px;
+    padding-right: 37px;
 
     font-size: 36px;
     line-height: 36px;
@@ -82,6 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: -40px;
     padding-top: 70px;
     padding-left: 40px;
   }
@@ -205,7 +186,7 @@
 }
 
 .catalog-extra__order {
-  margin-top: 15px;
+  margin-top: 14px;
   margin-bottom: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -224,7 +205,7 @@
   position: relative;
   width: 100%;
   height: 289px;
-  margin: 35px 0;
+  margin: 40px 0;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;

@@ -39,7 +39,6 @@
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: cover;
     background-color: $c-white;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -153,8 +152,7 @@
     width: 545px;
     height: auto;
     z-index: 0;
-    margin-left: 37%;
-    margin-top: -19.5%;
+    transform: translate(82.5%, -84%);
   }
 }
 

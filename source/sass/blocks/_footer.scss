@@ -66,22 +66,6 @@
   }
 }
 
-.copyright__link--image {
-  position: absolute;
-  content: "";
-  top: -8px;
-  right: -160px;
-  display: inline-block;
-  width: 28px;
-  height: 36px;
-
-  fill: $c-darkgray;
-
-  @media (min-width: $tablet-width) {
-    right: -50px;
-  }
-}
-
 .copyright__logo-icon-academy {
   margin-left: auto;
 
@@ -103,7 +87,7 @@
 .footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 36px 30px;
+    padding: 38px 30px 10px;
   }
 
   @media (min-width: $desktop-width) {
