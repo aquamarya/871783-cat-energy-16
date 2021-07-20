@@ -13,4 +13,6 @@
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/871783-cat-energy-16?type=dev
 
 Для запуска используйте команду:
-npm start
+```
+npm run start
+```
