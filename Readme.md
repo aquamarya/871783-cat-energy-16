@@ -1,4 +1,4 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] 
 
 * Студент: [Мария Власова](https://up.htmlacademy.ru/adaptive/16/user/871783).
 * Наставник: [Максим Ворожцов](https://htmlacademy.ru/profile/id485797).
