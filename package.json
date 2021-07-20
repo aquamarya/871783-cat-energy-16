@@ -47,5 +47,9 @@
   ],
   "engines": {
     "node": "8.15"
+  },
+  "dependencies": {
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
   }
 }
