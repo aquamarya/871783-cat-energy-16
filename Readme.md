@@ -11,3 +11,6 @@
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/871783-cat-energy-16
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/871783-cat-energy-16/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/871783-cat-energy-16?type=dev
+
+Для запуска используйте команду:
+npm start
